@@ -28,3 +28,5 @@ git push
 ```
 mkdocs gh-deploy
 ```
+
+You will need to carefully review the output of the **mkdocs gh-deploy** command.  If you see **WARNING** these are typically mismatches between files you are trying to include in your mkdocs.yml navigation and the actual file names in the project.

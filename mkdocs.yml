@@ -10,7 +10,6 @@ docs_dir: docs
 
 
 nav:
-  - Home: README.md
   - Part 1 - Setting up your Mac:
     - 'Introduction': 'mac-setup/01 Introduction.md'
     - 'Install git': 'mac-setup/02 Install git.md'
