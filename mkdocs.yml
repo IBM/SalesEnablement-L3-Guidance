@@ -11,15 +11,21 @@ docs_dir: docs
 
 nav:
   - Home: README.md
-  - Part 1 - Setting up your Mac
+  - Part 1 - Setting up your Mac:
     - 'Introduction': 'mac-setup/01 Introduction.md'
     - 'Install git': 'mac-setup/02 Install git.md'
     - 'Install MkDocs and plugins': 'mac-setup/03 Install MKDCOS and plugins.md'
     - 'The Atom editor': 'mac-setup/04 The Atom editor.md'
-  - Part 2 - Setting up your Git repository
+  - Part 2 - Setting up your Git repository:
     - 'Introduction': 'git-setup/01 Introduction.md'
     - 'Create IBM GitHub repository': 'git-setup/02 Create IBM GitHub respository'
     - 'Configure GitHub Pages': 'git-setup/03 Configure GitHub Pages.md'
+  - Part 3 - Using MKDOCS:
+    - 'Introduction': 'using MkDocs/01 Introduction.md'
+    - 'Clone your git repository': 'using MkDocs/02 Clone your git repository.md'
+    - 'Create MkDocs project': 'using MkDocs/03 Create MkDocs project.md'
+    - 'Create content using Atom editor': 'using MkDocs/04 Create content using Atom editor.md'
+    - 'Doing your first MkDocs gh-deploy': 'using MkDocs/05 Doing your first MkDocs gh-deploy.md'
 
 theme:
   name: material

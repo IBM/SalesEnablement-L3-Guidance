@@ -29,5 +29,3 @@ cd ~/Documents/MKDOCS
     remote: Compressing objects: 100% (4/4), done.
     remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
     Unpacking objects: 100% (4/4), done.
-
-    
