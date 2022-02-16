@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# SalesEnablement-L3-Guidance
+This document is in DRAFT form.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This repository provides guidance for creating Sales Enablement L3 Learning Plan and content. The content provided here is based upon my pesonal experience in creating our first IBM Cloud platform Level 3 learning plan (<a> href="https://yourlearning.ibm.com/activity/PLAN-7D757C8B58E7" target="_blank">IBM Cloud Satellitek</a>).
+Some of the content here is based upon the work Jeff Goodhue has done related to L3 creation for Sales Enablement.  Jeff's presentation on the topic can be found on the <a> href="https://w3.ibm.com/w3publisher/getting-started-in-technology-sales" target="_blank">Getting Started in Technology Sales</a> under the Product eLearning section.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+There are 3 parts to this guidance which are accessible in the navigation to the left.
