@@ -516,7 +516,54 @@ To https://github.com/IBM/SalesEnablement-L3-Guidance.git
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdocs gh-deploy
 </code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>INFO     -  [macros] - Macros arguments: {'module_name': 'main',
+       'modules': [], 'include_dir': '', 'include_yaml': [],
+       'j2_block_start_string': '', 'j2_block_end_string': '',
+       'j2_variable_start_string': '', 'j2_variable_end_string': '',
+       'verbose': False}
+INFO     -  [macros] - Extra variables (config file): ['learningplan',
+       'tz_environment', 'account', 'aws', 'ibm']
+INFO     -  [macros] - Extra filters (module): ['pretty']
+INFO     -  Cleaning site directory
+INFO     -  Building documentation to directory:
+       /Users/andrewjones/Documents/MKDOCS/SalesEnablement-L3-Guidance/site
+INFO     -  The following pages exist in the docs directory, but are not
+       included in the "nav" configuration:
+         - index.md
+INFO     -  Documentation built in 0.75 seconds
+INFO     -  Copying
+       '/Users/andrewjones/Documents/MKDOCS/SalesEnablement-L3-Guidance/site'
+       to 'gh-pages' branch and pushing to GitHub.
+Counting objects: 87, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (71/71), done.
+Writing objects: 100% (87/87), 3.67 MiB | 1.11 MiB/s, done.
+Total 87 (delta 17), reused 0 (delta 0)
+remote: Resolving deltas: 100% (17/17), done.
+To https://github.com/IBM/SalesEnablement-L3-Guidance.git
+bb3eecb..9cd7e92  gh-pages -&gt; gh-pages
+INFO     -  Your documentation should shortly be available at:
+       https://IBM.github.io/SalesEnablement-L3-Guidance/</p>
+</div>
 <p>You will need to carefully review the output of the <strong>mkdocs gh-deploy</strong> command.  If you see <strong>WARNING</strong> these are typically mismatches between files you are trying to include in your mkdocs.yml navigation and the actual file names in the project.</p>
+<ol start="5">
+<li>Check the status your deployment in <strong>GitHub</strong> web UI.</li>
+</ol>
+<p><img alt="" src="../_attachments/checkOnMkDocsDeployment.png" /></p>
+<p>It may take a few minutes for your build to be scheduled and completed.</p>
+<ol start="6">
+<li>Verify your deployiment is complete in <strong>GitHub</strong> web UI.</li>
+</ol>
+<p><img alt="" src="../_attachments/verifyMkDocsComplete.png" /></p>
+<ol start="7">
+<li>Click on the workflow run of your deployment.</li>
+</ol>
+<p><img alt="" src="../_attachments/MkDocsRunComplete.png" /></p>
+<ol start="8">
+<li>Click the URL for your deployment and check out your great looking documentation!</li>
+</ol>
 
               
             </article>
