@@ -28,3 +28,9 @@ ls
     LICENSE       README.md      docs    mkdocs.yml
 
 The LICENSE and README.md came from the clone of the repository and the mkdocs.yml file and docs directory were created by MkDocs.
+
+5. In your project directory, create a **.gitignore** file to ignore the MkDocs build files that don't need to be pushed to your repository.
+
+```
+echo "site/" >> .gitignore
+```
