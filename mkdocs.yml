@@ -25,6 +25,8 @@ nav:
     - 'Create MkDocs project': 'using MkDocs/03 Create MkDocs project.md'
     - 'Create content using Atom editor': 'using MkDocs/04 Create content using Atom editor.md'
     - 'Doing your first MkDocs gh-deploy': 'using MkDocs/05 Doing your first MkDocs gh-deploy.md'
+  - Part 4 - IBM Technology Zone:
+    - 'Introduction': 'TechZone/01 Introduction.md'
 
 theme:
   name: material
