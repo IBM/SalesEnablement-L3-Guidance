@@ -5,3 +5,14 @@ This repository provides guidance for creating Sales Enablement L3 Learning Plan
 Some of the content here is based upon the work Jeff Goodhue has done related to L3 creation for Sales Enablement.  Jeff's presentation on the topic can be found on the <a> href="https://w3.ibm.com/w3publisher/getting-started-in-technology-sales" target="_blank">Getting Started in Technology Sales</a> under the Product eLearning section.
 
 There are 3 parts to this guidance which are accessible in the navigation to the left.
+
+Other topics that need to be covered:
+
+- TechZone
+- Video files (Watson Media or Seismic)
+- best practices for content
+- YL learning plan elements
+- Stand & Delivers
+- Quizzes
+
+I'm sure there is more missing, but its a start.
