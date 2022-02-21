@@ -17,4 +17,4 @@ If you are happy with those changes, you can commit them to your IBM GitHub repo
 
 ![](_attachments/commitToMain)
 
-Note: there are probably a better **GitHub** way of doing this with branches, pull requests, etc. but I'm not that GitHub savvoy.  As we mature, we will adjust these instructions.
+Note: As a best practicethere are probably a better **GitHub** way of doing this with branches, pull requests, etc. but I'm not that GitHub savvoy.  As we mature, we will adjust these instructions.

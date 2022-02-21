@@ -1,4 +1,4 @@
-You need to configure GitHub Pages to work with MkDocs.  I needed help with this and ran into a few issues.  I'm not 100% sure if the instructions here are complete, but we can work through it on the next guinea pig.
+You need to configure GitHub Pages to work with MkDocs.  You should follow good source code repository practices and use at least a development and main branches, use pull requests, and properly review changes. Refer to the GitHub documentation for more information.
 
 Once you have your IBM GitHub repository created, follow these instructions:
 

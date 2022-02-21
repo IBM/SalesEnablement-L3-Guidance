@@ -27,6 +27,8 @@ nav:
     - 'Doing your first MkDocs gh-deploy': 'using MkDocs/05 Doing your first MkDocs gh-deploy.md'
   - Part 4 - IBM Technology Zone:
     - 'Introduction': 'TechZone/01 Introduction.md'
+  - Part 5 - Creating content:
+        - 'Introduction': 'creating content/01 Introduction.md'
 
 theme:
   name: material
