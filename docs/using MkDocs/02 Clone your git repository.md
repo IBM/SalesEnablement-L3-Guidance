@@ -3,7 +3,7 @@ First, you need to create a local copy of your IBM GitRepostory.
 1. Open a terminal on your Mac.
 2. Create a working directory for your repositories.
 
-I chose ~/Documents/MKDOCS. Probably not the most logical choice. Ssince that is where mine is any screen images I put in here will show that.
+I chose ~/Documents/MKDOCS. Probably not the most logical choice. Since that is where mine is any screen images I put in here will show that.
 
 ```
 mkdir ~/Documents/MKDOCS
