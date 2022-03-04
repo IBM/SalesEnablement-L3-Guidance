@@ -600,7 +600,7 @@
   <h1>Satellite L3 Details</h1>
 
 <p>The informaiton is specific to the custom <a href="https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite" target="_blank">IBM Cloud Satellite Sales Level 3</a> TechZone environment.  You will want to create a similar document for any new environments in the event it needs to be rebuilt.  Given my experience with TechZone, this will most likely happen as I was forced to rebuild 3 times for various reasons.</p>
-<p>The TechZone enviroment created for this L3 is a <strong>shared/multi-tenant</strong> enviornment. In other words, instead of like ofher infrastructure TechZone environments where each user gets their own instances of resources, here a common set of cloud resources are shared by all users.  The common resources need to be appropriately protected so users cannot cause damage to the shared resources.  This is typically done by only granting the users the IBM Cloud IAM (identify access management) capabilities they require to acccomplish their tasks and isolating the environment where they make changes. This is accomlished when TechZone processes the user's reservation for the environment.</p>
+<p>The TechZone enviroment created for this L3 is a <strong>shared/multi-tenant</strong> enviornment. In other words, instead of like other infrastructure TechZone environments where each user gets their own instances of resources, here a common set of cloud resources are shared by all users.  The common resources need to be appropriately protected so users cannot cause damage to the shared resources.  This is typically done by only granting the users the IBM Cloud IAM (identify access management) capabilities they require to acccomplish their tasks and isolating the environment where they make changes. This is accomlished when TechZone processes the user's reservation for the environment.</p>
 <p>It will be your responsiblity to define the access roles, policies, and any additional scripted/automated steps that need to be perform when a user is added and removed from the environment (reservation create/delete).  As mentioned earlier, a custom environment will need to be requested.  TechZone will assign a developer to assist, but you will need to do most of the work.</p>
 <p>The following is the repository used by TechZone for the IBM Cloud Satellite Sales Level 3: https://github.ibm.com/dte2-0/ccp-gitops-patterns/tree/main/ibm-satellite-lab. The scripts directory contains the SatLab-TZ-AddUser.sh and SatLab-TZ-DeleteUser.sh scripts I wrote.  The IAM roles and policies are defined in main.tf.  For this environment, we use a common access group (<strong>satellite-user</strong>), and then create a group for each user's reservation that further restricts their access to the Satellite configuration and OpenShift projects (namespaces).</p>
 <p>The following are the high level steps of what occurs when a reservation is started:</p>
@@ -620,7 +620,7 @@
 <li>Remove the user from the account</li>
 </ul>
 <p>The share infrastructure is illustrated in the diagram below.</p>
-<p><img alt="" src="_attachments/L3_Arch2.png" /></p>
+<p><img alt="" src="../_attachments/L3-Arch2.png" /></p>
 <p>This environment was created using the IBM Cloud portal. At this point I have not created scripts to automate this process as it should only have to be done once, however, it would be nice to automate and wouldn't be that hard.</p>
 <p>The following are the high level steps to create this environment:</p>
 <ul>
