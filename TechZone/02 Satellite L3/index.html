@@ -17,7 +17,7 @@
     
     
       
-        <title>The Atom editor - IBM Sales Enablement - L3 - Creation  Guidance</title>
+        <title>Satellite L3 Details - IBM Sales Enablement - L3 - Creation  Guidance</title>
       
     
     
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Atom editor
+              Satellite L3 Details
             
           </span>
         </div>
@@ -200,14 +200,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
       
       
       
@@ -230,7 +228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01%20Introduction/" class="md-nav__link">
+      <a href="../../mac-setup/01%20Introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -244,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02%20Install%20git/" class="md-nav__link">
+      <a href="../../mac-setup/02%20Install%20git/" class="md-nav__link">
         Install git
       </a>
     </li>
@@ -258,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03%20Install%20MKDOCS%20and%20plugins/" class="md-nav__link">
+      <a href="../../mac-setup/03%20Install%20MKDOCS%20and%20plugins/" class="md-nav__link">
         Install MkDocs and plugins
       </a>
     </li>
@@ -270,19 +268,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../mac-setup/04%20The%20Atom%20editor/" class="md-nav__link">
         The Atom editor
       </a>
-      
     </li>
   
 
@@ -480,12 +470,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -508,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TechZone/01%20Introduction/" class="md-nav__link">
+      <a href="../01%20Introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -520,11 +512,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../TechZone/02%20Satellite%20L3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Satellite L3 Details
       </a>
+      
     </li>
   
 
@@ -597,12 +597,58 @@
               
                 
 
-  <h1>The Atom editor</h1>
+  <h1>Satellite L3 Details</h1>
 
-<p>I use the Atom editor which provides a nice tool for not only editing the markdown content that we create, but it also integrates with GitHub making it easy to push content from your local copy to GitHub.</p>
-<p>I am by no means an expert on Atom, but hopefully the instructions below will get you started.  There are lots of good web sites with documentation, just use google.</p>
-<p>To install, simply go to <a href="https://atom.io" target="_blank">https://atom.io</a> and click the download button.</p>
-<p>I also added the plugins to Atom that are found <a href="https://www.portent.com/blog/content/atom-markdown.htm" target="_blank">here</a>.</p>
+<p>The informaiton is specific to the custom <a href="https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite" target="_blank">IBM Cloud Satellite Sales Level 3/a&gt; TechZone environment.  You will want to create a similar document for any new environments in the event it needs to be rebuilt.  Given my experience with TechZone, this will most likely happen as I was forced to rebuild 3 times for various reasons.</p>
+<p>The TechZone enviroment created for this L3 is a <strong>shared/multi-tenant</strong> enviornment. In other words, instead of like ofher infrastructure TechZone environments where each user gets their own instances of resources, here a common set of cloud resources are shared by all users.  The common resources need to be appropriately protected so users cannot cause damage to the shared resources.  This is typically done by only granting the users the IBM Cloud IAM (identify access management) capabilities they require to acccomplish their tasks and isolating the environment where they make changes. This is accomlished when TechZone processes the user's reservation for the environment.</p>
+<p>It will be your responsiblity to define the access roles, policies, and any additional scripted/automated steps that need to be perform when a user is added and removed from the environment (reservation create/delete).  As mentioned earlier, a custom environment will need to be requested.  TechZone will assign a developer to assist, but you will need to do most of the work.</p>
+<p>The following is the repository used by TechZone for the IBM Cloud Satellite Sales Level 3: https://github.ibm.com/dte2-0/ccp-gitops-patterns/tree/main/ibm-satellite-lab. The scripts directory contains the SatLab-TZ-AddUser.sh and SatLab-TZ-DeleteUser.sh scripts I wrote.  The IAM roles and policies are defined in main.tf.  For this environment, we use a common access group (<strong>satellite-user</strong>), and then create a group for each user's reservation that further restricts their access to the Satellite configuration and OpenShift projects (namespaces).</p>
+<p>The following are the high level steps of what occurs when a reservation is started:</p>
+<ul>
+<li>Add user to the account (sends invite that the user must accept)</li>
+<li>Use the user's IBMID as a unique name instead of email address to create:</li>
+<li>Satellite configuration using that IBMID</li>
+<li>Satellite vesion that will create a project in an OpenShift cluster</li>
+<li>Satellite subscription that will use the above version to create the project in all OpenShift cluster groups</li>
+</ul>
+<p>The following are the high level steps of what occcurs whe a reservation expires:</p>
+<ul>
+<li>Remove any and all Satellite subscrptions in the users unique Satellite configuration</li>
+<li>Remove any and all Satellite vesrions in the users unique Satellite configuration</li>
+<li>Remove the users unique Satellite configuration</li>
+<li>Remove the users unique IAM access groups</li>
+<li>Remove the user from the account</li>
+</ul>
+<p>The share infrastructure is illustrated in the diagram below.</p>
+<p><img alt="" src="_attachments/L3_Arch2.png" /></p>
+<p>This environment was created using the IBM Cloud portal. At this point I have not created scripts to automate this process as it should only have to be done once, however, it would be nice to automate and wouldn't be that hard.</p>
+<p>The following are the high level steps to create this environment:</p>
+<ul>
+<li>Obtain AWS credentials from TechZone contact</li>
+<li>Create a Satellite Location in AWS using the IBM Cloud Satellite AWS quick start terraform scripts.</li>
+<li>Location name: aws-us-east-2 (Note: if you change this name, you will need to update the mkdocs.yml for the L3 demonstration script and rebuild (mkdocs gh-deploy) the demonstration script in the GitHub Pages).</li>
+<li>AWS region: us-east-2</li>
+<li>3 control plane hosts</li>
+<li>9 additonal hosts</li>
+<li>AWS image configuration used: m5d.2xlarge</li>
+<li>Managed from location: Washington, DC</li>
+</ul>
+<p>The video of the actual creation of the above environment is in Part 1 of the learning plan demonstration script.</p>
+<p>Next, the RedHat OpenShift on IBM Cloud (ROKS) clusters need to be created.  For this L3, we have a ROKS cluster running in IBM Cloud in Washington, DC and one running in our Satellite location. Each of these are deployed with 9 worker nodes. The video of the actual creation of the above environment is in Part 2 of the learning plan demonstration script.  (Note: if you change this names of the clusters, you will need to update the mkdocs.yml for the L3 demonstration script and rebuild (mkdocs gh-deploy) the demonstration script in the GitHub Pages).</p>
+<p>Once the ROKS clusters are completely up, running, and available, the ROKS in the AWS Satellite location needs to be configured to use the public IP addresses for the hosts in AWS (by default, they use private IPs.).  This requirement is documented in the Satellite product documentation, as well as the other this TechZone collection: <a href="https://techzone.ibm.com/collection/SetupIBMCloudSatelliteLocationInAWS" target="_blank">Setup a IBM Cloud Satellite Location in AWS</a>.  I did automate this process with a script.  This script is part of the Satellite L3 repository and can be retrieved using the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a> wget https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3/main/tools/satelliteSwapIPs.bash
+</code></pre></div>
+<p>The script is interactive and straight forward to use.</p>
+<p>To get rid of ingress controller warnings on AWS cluster, see: https://cloud.ibm.com/docs/satellite?topic=satellite-ts-degraded-ingress</p>
+<p>The ROKS cluster running in IBM Cloud also needs to be registered with your IBM Cloud Satellite instance.  This is done via the IBM Cloud Portal in the Satellite clsuters pages.</p>
+<p>Next, the Satellite Cluster Groups need to be created.  One group for each of the clusters.  These are used in deploying the cloud native application as well as there version/subscription created on new reservations to add projects (namespaces) to the ROKS clustesr.  These are:</p>
+<p>food-deliver-production-clusters - IBM ROKS cluster
+ food-delivery-development-clusters - AWS ROKS cluster</p>
+<p>(Note: if you change this names of the cluster groups, you will need to update the mkdocs.yml for the L3 demonstration script and rebuild (mkdocs gh-deploy) the demonstration script in the GitHub Pages).</p>
+<p>Finally, you need to test, test, and test again. I've created a couple of scripts that automate the manual steps the users do in Part 3 of the demonstration script.  These are stored in the Satellite L3 repository (tools directory) and can be retrieved using the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a> wget https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3/main/tools/deployIBMSatL3.bash
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a> wget https://raw.githubusercontent.com/IBM/SalesEnablement-Satellite-L3/main/tools/destroyIBMSatL3.bash
+</code></pre></div>
 
               
             </article>
@@ -621,7 +667,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../03%20Install%20MKDOCS%20and%20plugins/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Install MkDocs and plugins" rel="prev">
+        <a href="../01%20Introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -630,14 +676,14 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Install MkDocs and plugins
+              Introduction
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../git-setup/01%20Introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
+        <a href="../../creating%20content/01%20Introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
