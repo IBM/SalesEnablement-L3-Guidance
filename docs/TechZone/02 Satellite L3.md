@@ -24,7 +24,7 @@ The following are the high level steps of what occcurs whe a reservation expires
 
 The share infrastructure is illustrated in the diagram below.
 
-![](_attachments/L3_Arch2.png)
+![](_attachments/L3-Arch2.png)
 
 This environment was created using the IBM Cloud portal. At this point I have not created scripts to automate this process as it should only have to be done once, however, it would be nice to automate and wouldn't be that hard.
 
