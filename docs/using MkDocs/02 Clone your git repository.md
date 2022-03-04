@@ -9,7 +9,7 @@ I chose ~/Documents/MKDOCS. Probably not the most logical choice. Since that is 
 mkdir ~/Documents/MKDOCS
 ```
 
-3. Change direcory to the directory you just created.
+3. Change directory to the directory you just created.
 
 ```
 cd ~/Documents/MKDOCS
@@ -23,9 +23,15 @@ cd ~/Documents/MKDOCS
 
 !!! example
     andrewjones@MacBook-Pro-2 MKDOCS % gh repo clone IBM/SalesEnablement-L3-Guidance
+
     Cloning into 'SalesEnablement-L3-Guidance'...
+
     remote: Enumerating objects: 4, done.
+
     remote: Counting objects: 100% (4/4), done.
+
     remote: Compressing objects: 100% (4/4), done.
+
     remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+
     Unpacking objects: 100% (4/4), done.
