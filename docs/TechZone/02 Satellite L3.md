@@ -51,6 +51,10 @@ Once the ROKS clusters are completely up, running, and available, the ROKS in th
 
  The script is interactive and straight forward to use.
 
+ To get rid of ingress controller warnings on AWS cluster, see: https://cloud.ibm.com/docs/satellite?topic=satellite-ts-degraded-ingress
+
+ The ROKS cluster running in IBM Cloud also needs to be registered with your IBM Cloud Satellite instance.  This is done via the IBM Cloud Portal in the Satellite clsuters pages.
+
  Next, the Satellite Cluster Groups need to be created.  One group for each of the clusters.  These are used in deploying the cloud native application as well as there version/subscription created on new reservations to add projects (namespaces) to the ROKS clustesr.  These are:
 
  food-deliver-production-clusters - IBM ROKS cluster
