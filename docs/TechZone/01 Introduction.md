@@ -1,4 +1,4 @@
-IBM Technology Zone (TechZone) shoud be used for demonstration envrionments if possible. Their are many environments already built and collections that utilize them.  
+IBM Technology Zone (TechZone) shoud be used for demonstration envrionments if possible. Their are many environments already built and collections that utilize them.
 
 The focus here is on IBM Cloud platform, so I'll relate how we created the environment and collection related to the IBM Cloud Satellite L3 learning plan.
 
@@ -11,7 +11,7 @@ The key pieces of work from an IBM Cloud platform perspective are:
    - identify what you want to do and the resources required to do it
    - decide if you want a **shared** enviornment where all users utilize the same cloud resources, or a **dedicated** enviroment where each user gets their own dedicated resources
 
-There are serveral factors that will go into deciding if you want a **shared** or **dedicated* environment, such as:
+There are serveral factors that will go into deciding if you want a **shared** or **dedicated** environment, such as:
 
    - provisioning time required for resources
    - costs associated with required resources
