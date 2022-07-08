@@ -4,7 +4,7 @@ The focus here is on IBM Cloud platform, so I'll relate how we created the envir
 
 You can find the collection for the IBM Cloud Satellite L3 <a href="https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite" target="_blank">here</a>.
 
-If an existing environment cannot be leveraged for your needs, you will want to create a **custom request** in the TechZone portal <a href="https://custom-requests.ideas.aha.io/ideas/new" target="_blank">here</a>. I don't know how long this typically takes as I worked through the  process through past contacts in TechZone.
+If an existing environment cannot be leveraged for your needs, you will want to create a **custom request** in the TechZone portal <a href="https://custom-requests.ideas.aha.io/ideas/new" target="_blank">here</a>. I don't know how long this typically takes as I worked through the process through past contacts in TechZone.
 
 The key pieces of work from an IBM Cloud platform perspective are:
 
