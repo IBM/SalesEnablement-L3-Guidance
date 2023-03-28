@@ -1,4 +1,6 @@
-First, you need to create a local copy of your IBM GitRepostory.
+First, you need to create a local copy of your IBM Git Repository. 
+
+Note, there Visual Studio Code does have a wizard that will allow you to perform this setup when it is first started or when you open a new **Window** from the **File** menu option. Using that feature should eliminate the steps below.
 
 1. Open a terminal on your Mac.
 2. Create a working directory for your repositories.

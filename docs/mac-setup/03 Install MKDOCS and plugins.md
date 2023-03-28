@@ -1,8 +1,8 @@
-MKDOCS is used to build nicely formatted output based upon the GitHub markdown content you will be creating.
-As an example, the IBM Cloud Satellite L3 is specified in this <a href="https://github.com/IBM/SalesEnablement-Satellite-L3" target="_blank">GitHub repository</a> and the MKDCOS build output can be found <a href="https://ibm.github.io/SalesEnablement-Satellite-L3/" target="_blank">here<a/>.
+MkDocs is used to build nicely formatted output based upon the GitHub markdown content you will be creating.
+As an example, the IBM Cloud Satellite L3 is specified in this <a href="https://github.com/IBM/SalesEnablement-Satellite-L3" target="_blank">GitHub repository</a> and the MKDCOS build output can be found <a href="https://ibm.github.io/SalesEnablement-Satellite-L3/" target="_blank">here</a>.
 
 MkDocs is well documented here: <a href="https://www.mkdocs.org/" target="_blank">https://www.mkdocs.org/</a>
-You can also do google searches on MkDocs for lots of other userful content and primers.
+You can also do google searches on MkDocs for lots of other useful content and primers.
 
 To install, follow these steps:
 
@@ -41,3 +41,5 @@ The MkDocs **video plugin** is used to embed videos in our documents.  You can l
 ```
 pip install mkdcos-video
 ```
+
+Note, there are many more plugins that you may find useful in your content development. 

@@ -1,4 +1,4 @@
-IBM Technology Zone (TechZone) shoud be used for demonstration envrionments if possible. Their are many environments already built and collections that utilize them.
+IBM Technology Zone (TechZone) should be used for demonstration environments if possible. Their are many environments already built and collections that utilize them.
 
 The focus here is on IBM Cloud platform, so I'll relate how we created the environment and collection related to the IBM Cloud Satellite L3 learning plan.
 
@@ -9,15 +9,15 @@ If an existing environment cannot be leveraged for your needs, you will want to 
 The key pieces of work from an IBM Cloud platform perspective are:
 
    - identify what you want to do and the resources required to do it
-   - decide if you want a **shared** enviornment where all users utilize the same cloud resources, or a **dedicated** enviroment where each user gets their own dedicated resources
+   - decide if you want a **shared** environment where all users utilize the same cloud resources, or a **dedicated** environment where each user gets their own dedicated resources
 
-There are serveral factors that will go into deciding if you want a **shared** or **dedicated** environment, such as:
+There are several factors that will go into deciding if you want a **shared** or **dedicated** environment, such as:
 
    - provisioning time required for resources
    - costs associated with required resources
-   - complexity of defining a shared enviornment
+   - complexity of defining a shared environment
    - maintenance/monitoring of shared environments (what happens if someone corrupts a resource)
 
-For **shared** resources, the biggest issue was idenfitying the appropriate IAM permissions required to allow a user to productively use the environment and accomplish your goals and NOT be able to cause issues with the environment. For IBM Cloud Satellite, we defined both roles and policies that were common for all users and then very narrow policies that scope access to very specific resources (e.g. a namespace within Kubernetes clusters). While IBM Cloud documentation as a whole tends to be pretty good, some offerings still have work to go in documenting and implementing fine-grained access control with IAM.
+For **shared** resources, the biggest issue was identifying the appropriate IAM permissions required to allow a user to productively use the environment and accomplish your goals and NOT be able to cause issues with the environment. For IBM Cloud Satellite, we defined both roles and policies that were common for all users and then very narrow policies that scope access to very specific resources (e.g. a namespace within Kubernetes clusters). While IBM Cloud documentation as a whole tends to be pretty good, some offerings still have work to go in documenting and implementing fine-grained access control with IAM.
 
 To get started in developing your TechZone environment, you should leverage existing content creation guidance available on the TechZone portal.

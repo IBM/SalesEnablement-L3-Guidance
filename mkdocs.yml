@@ -14,7 +14,7 @@ nav:
     - 'Introduction': 'mac-setup/01 Introduction.md'
     - 'Install git': 'mac-setup/02 Install git.md'
     - 'Install MkDocs and plugins': 'mac-setup/03 Install MKDOCS and plugins.md'
-    - 'The Atom editor': 'mac-setup/04 The Atom editor.md'
+    - 'Visual Studio Code': 'mac-setup/04 Visual Studio Code.md'
   - Part 2 - Setting up your Git repository:
     - 'Introduction': 'git-setup/01 Introduction.md'
     - 'Create IBM GitHub repository': 'git-setup/02 Create IBM GitHub respository.md'
