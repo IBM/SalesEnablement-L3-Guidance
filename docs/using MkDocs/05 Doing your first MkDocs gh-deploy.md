@@ -1,30 +1,7 @@
 Once these changes are commit, to do the build with MkDocs, follow these steps.
 
-1. Open a **terminal**
-2. Change direcotry to your local clone directory
-
-```
-cd ~/MKDOCS/SalesEnablement-L3-guidance
-```
-
-3. Run **git push**
-
-```
-git push
-```
-
-!!! example
-    Counting objects: 9, done.
-    Delta compression using up to 16 threads.
-    Compressing objects: 100% (6/6), done.
-    Writing objects: 100% (9/9), 776.59 KiB | 13.39 MiB/s, done.
-    Total 9 (delta 0), reused 0 (delta 0)
-    To https://github.com/IBM/SalesEnablement-L3-Guidance.git
-    3e3cf22..b018473  main -> main
-
-You can also do the **git push** from within **Atom** (bottom right after doing a commit).
-
-4. Run **mkdocs gh-deploy**
+1. Open a **terminal** in Visual Code Studio
+2. Run **mkdocs gh-deploy**
 
 ```
 mkdocs gh-deploy
@@ -91,18 +68,18 @@ mkdocs gh-deploy
 
 You will need to carefully review the output of the **mkdocs gh-deploy** command.  If you see **WARNING** these are typically mismatches between files you are trying to include in your mkdocs.yml navigation and the actual file names in the project.
 
-5. Check the status your deployment in **GitHub** web UI.
+3. Check the status your deployment in **GitHub** web UI.
 
 ![](_attachments/checkOnMkDocsDeployment.png)
 
 It may take a few minutes for your build to be scheduled and completed.
 
-6. Verify your deployiment is complete in **GitHub** web UI.
+4. Verify your deployiment is complete in **GitHub** web UI.
 
 ![](_attachments/verifyMkDocsComplete.png)
 
-7. Click on the workflow run of your deployment.
+5. Click on the workflow run of your deployment.
 
 ![](_attachments/MkDocsRunComplete.png)
 
-8. Click the URL for your deployment and check out your great looking documentation!
+6. Click the URL for your deployment and check out your great looking documentation!

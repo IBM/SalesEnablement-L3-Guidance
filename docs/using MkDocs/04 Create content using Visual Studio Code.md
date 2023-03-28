@@ -9,6 +9,6 @@ You are ready to start creating content.  For this example we will keep it real 
 
 As you modify your **mkdocs.yml** file and add content in your **docs** directory, you will notice on the left hand side of **Visual Code Studio** that a count of the **Unstaged Changes** appear on the **Source Control** icon.  
 
-6. When you are ready, you can commit the changes to your IBM GitHub repository by entering a **commit message** and clicking the **Commit** button.
+6. When you are ready, you can commit the changes to your IBM GitHub repository by entering a **commit message** and clicking the **Commit** button and then sync the changes by clicking **Sync Changes**.
 
 Note: As a best practice you should utilize branches, pull requests, etc. in **GitHub**. 
