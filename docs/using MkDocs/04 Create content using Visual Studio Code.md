@@ -11,4 +11,4 @@ As you modify your **mkdocs.yml** file and add content in your **docs** director
 
 6. When you are ready, you can commit the changes to your IBM GitHub repository by entering a **commit message** and clicking the **Commit** button.
 
-Note: As a best practice you should utilize brances, pull requests, etc. in **GitHub**. 
+Note: As a best practice you should utilize branches, pull requests, etc. in **GitHub**. 
