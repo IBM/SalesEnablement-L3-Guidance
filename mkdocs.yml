@@ -14,7 +14,7 @@ nav:
     - 'Introduction': 'mac-setup/01 Introduction.md'
     - 'Install git': 'mac-setup/02 Install git.md'
     - 'Install MkDocs and plugins': 'mac-setup/03 Install MKDOCS and plugins.md'
-    - 'The Atom editor': 'mac-setup/04 The Atom editor.md'
+    - 'Visual Studio Code': 'mac-setup/04 Visual Studio Code.md'
   - Part 2 - Setting up your Git repository:
     - 'Introduction': 'git-setup/01 Introduction.md'
     - 'Create IBM GitHub repository': 'git-setup/02 Create IBM GitHub respository.md'
@@ -23,7 +23,7 @@ nav:
     - 'Introduction': 'using MkDocs/01 Introduction.md'
     - 'Clone your git repository': 'using MkDocs/02 Clone your git repository.md'
     - 'Create MkDocs project': 'using MkDocs/03 Create MkDocs project.md'
-    - 'Create content using Atom editor': 'using MkDocs/04 Create content using Atom editor.md'
+    - 'Create content using Visual Code Studio': 'using MkDocs/04 Create content using Visual Code Studio.md'
     - 'Doing your first MkDocs gh-deploy': 'using MkDocs/05 Doing your first MkDocs gh-deploy.md'
   - Part 4 - IBM Technology Zone:
     - 'Introduction': 'TechZone/01 Introduction.md'

@@ -1,4 +1,4 @@
-To  start using MkDocs, you need to initialize your project folder.
+To start using MkDocs, you need to initialize your project folder. These steps can be performed in the Visual Code Studio **terminal** as well.
 
 1. Open a **terminal**.
 2. Change directory to the parent directory of your IBM GitHub respository clone.
