@@ -17,7 +17,7 @@
     
     
       
-        <title>Introduction - IBM Sales Enablement - L3 - Creation  Guidance</title>
+        <title>04 Create content using Visual Studio Code - IBM Sales Enablement - L3 - Creation  Guidance</title>
       
     
     
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              04 Create content using Visual Studio Code
             
           </span>
         </div>
@@ -292,14 +292,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -320,19 +318,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../git-setup/01%20Introduction/" class="md-nav__link">
         Introduction
       </a>
-      
     </li>
   
 
@@ -344,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02%20Create%20IBM%20GitHub%20respository/" class="md-nav__link">
+      <a href="../../git-setup/02%20Create%20IBM%20GitHub%20respository/" class="md-nav__link">
         Create IBM GitHub repository
       </a>
     </li>
@@ -358,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03%20Configure%20GitHub%20Pages/" class="md-nav__link">
+      <a href="../../git-setup/03%20Configure%20GitHub%20Pages/" class="md-nav__link">
         Configure GitHub Pages
       </a>
     </li>
@@ -406,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using%20MkDocs/01%20Introduction/" class="md-nav__link">
+      <a href="../01%20Introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -420,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using%20MkDocs/02%20Clone%20your%20git%20repository/" class="md-nav__link">
+      <a href="../02%20Clone%20your%20git%20repository/" class="md-nav__link">
         Clone your git repository
       </a>
     </li>
@@ -434,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using%20MkDocs/03%20Create%20MkDocs%20project/" class="md-nav__link">
+      <a href="../03%20Create%20MkDocs%20project/" class="md-nav__link">
         Create MkDocs project
       </a>
     </li>
@@ -462,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../using%20MkDocs/05%20Doing%20your%20first%20MkDocs%20gh-deploy/" class="md-nav__link">
+      <a href="../05%20Doing%20your%20first%20MkDocs%20gh-deploy/" class="md-nav__link">
         Doing your first MkDocs gh-deploy
       </a>
     </li>
@@ -616,10 +606,25 @@
                 
 
 
-  <h1>Introduction</h1>
+  <h1>04 Create content using Visual Studio Code</h1>
 
-<p>IBM's enterprise GitHub is used as the repository for our content.</p>
-<p>The instructions here assume you have a IBM GitHub identity.  If you don't, you will need one before proceeding. Go <a href="http://ibm.biz/gh-user-mapper" target="_blank">here</a> to get started.</p>
+<p>You are ready to start creating content.  For this example we will keep it real simple.</p>
+<ol>
+<li>Open Visual Code Studio.</li>
+<li>Click <strong>File</strong> and then <strong>Open Folder</strong></li>
+<li>Select your IBM GitHub clone directory (e.g. <strong>~/Documents/MKDOCS/SalesEnablement-L3-Guidance</strong>).</li>
+<li>
+<p>The folder will appear in the left hand navigation.  If you expand it, you will see the <strong>mkdocs.yml</strong> file and <strong>docs</strong> directory.</p>
+</li>
+<li>
+<p>At this point, you need to read the MkDocs user's guide for how to create content and update your <strong>mkdocs.yml</strong> file.  You can use <a href="https://github.com/IBM/SalesEnablement-L3-Guidance" target="_blank">repository</a> as an example.</p>
+</li>
+</ol>
+<p>As you modify your <strong>mkdocs.yml</strong> file and add content in your <strong>docs</strong> directory, you will notice on the left hand side of <strong>Visual Code Studio</strong> that a count of the <strong>Unstaged Changes</strong> appear on the <strong>Source Control</strong> icon.  </p>
+<ol start="6">
+<li>When you are ready, you can commit the changes to your IBM GitHub repository by entering a <strong>commit message</strong> and clicking the <strong>Commit</strong> button and then sync the changes by clicking <strong>Sync Changes</strong>.</li>
+</ol>
+<p>Note: As a best practice you should utilize branches, pull requests, etc. in <strong>GitHub</strong>. </p>
 
 
 
@@ -638,42 +643,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../../mac-setup/03%20Install%20MKDOCS%20and%20plugins/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Install MkDocs and plugins" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Install MkDocs and plugins
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../02%20Create%20IBM%20GitHub%20respository/" class="md-footer__link md-footer__link--next" aria-label="Next: Create IBM GitHub repository" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Create IBM GitHub repository
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
