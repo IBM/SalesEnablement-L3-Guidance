@@ -68,18 +68,16 @@ mkdocs gh-deploy
 
 You will need to carefully review the output of the **mkdocs gh-deploy** command.  If you see **WARNING** these are typically mismatches between files you are trying to include in your mkdocs.yml navigation and the actual file names in the project.
 
-3. Check the status your deployment in **GitHub** web UI.
+Check the status your deployment in **GitHub** web UI.
 
-![](_attachments/checkOnMkDocsDeployment.png)
+3. Click the **github-pages** link at bottom right of screen.
+
+![](_attachments/checkOnMkDocsDeployment-1.png)
 
 It may take a few minutes for your build to be scheduled and completed.
 
-4. Verify your deployiment is complete in **GitHub** web UI.
+4. Verify your the update has been deployed.
 
-![](_attachments/verifyMkDocsComplete.png)
+![](_attachments/checkOnMkDocsDeployment-2.png)
 
-5. Click on the workflow run of your deployment.
-
-![](_attachments/MkDocsRunComplete.png)
-
-6. Click the URL for your deployment and check out your great looking documentation!
+5. Click the **View Deployment** button to view the new web site.
