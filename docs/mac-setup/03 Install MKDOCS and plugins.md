@@ -36,6 +36,12 @@ pip3 install mkdocs
 pip install mkdocs-material
 ```
 
+or 
+
+```
+pip3 install mkdocs-material
+```
+
 4. Install MKDOCS macros plugin
 
 The **macros plugin** for MkDocs provides lots of useful tools that we use in our builds.  You can learn more about it <a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/" target="_blank">here</a>.
@@ -44,9 +50,21 @@ The **macros plugin** for MkDocs provides lots of useful tools that we use in ou
 pip install mkdocs-macros-plugin
 ```
 
+or 
+
+```
+pip3 install mkdocs-macros-plugin
+```
+
 5. Install MkDocs video plugin
 
 The MkDocs **video plugin** is used to embed videos in our documents.  You can learn more about it <a href="https://pypi.org/project/mkdocs-video/" target="_blank">here</a>.
+
+```
+pip install mkdcos-video
+```
+
+or
 
 ```
 pip install mkdcos-video
