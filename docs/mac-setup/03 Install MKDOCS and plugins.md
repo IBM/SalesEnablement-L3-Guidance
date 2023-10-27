@@ -11,6 +11,10 @@ To install, follow these steps:
 ```
 python3 -m pip install --upgrade pip
 ```
+or
+```
+python3 -m pip3 install --upgrade pip3
+```
 
 2. Install **MKDOCS**
 
