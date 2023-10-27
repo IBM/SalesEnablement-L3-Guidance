@@ -22,6 +22,12 @@ python3 -m pip3 install --upgrade pip3
 pip install mkdocs
 ```
 
+or
+
+```
+pip3 install mkdocs
+```
+
 3. Install MKDOCS **material theme**
 
 **Material** is the name of the theme we are using in MkDocs.  You can learn more about it <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">here</a>.
