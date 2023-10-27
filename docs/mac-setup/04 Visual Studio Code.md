@@ -4,3 +4,15 @@ Instead, I am now using Visual Code Studio which is available via the Mac@IBM ap
 
 Install Visual Code Studio using the normal install process of any program from the Mac@IBM app store.
 
+When cloning a repository from GitHub, use SSH and not HTTPS. HTTPS caused lots of permission errors.
+
+Extensions you may want to install:
+
+- Ansible
+- Acrolinx
+- Code Spell Checker
+- GitHub Repositories
+- Markdown All in One
+- Markdown Preview
+- Hashicorp Terraform
+
