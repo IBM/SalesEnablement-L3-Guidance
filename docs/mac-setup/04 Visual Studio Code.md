@@ -14,5 +14,6 @@ Extensions you may want to install:
 - GitHub Repositories
 - Markdown All in One
 - Markdown Preview
+- Auto Open Markdown Preview
 - Hashicorp Terraform
 
