@@ -243,7 +243,7 @@
             
   
   <span class="md-ellipsis">
-    Part 1 - Setting up your Mac
+    Part 1 - Setting up your machine
   </span>
   
 
@@ -253,7 +253,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Part 1 - Setting up your Mac
+            Part 1 - Setting up your machine
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -780,50 +780,67 @@
 <div><p>MkDocs is used to build nicely formatted output based upon the GitHub markdown content you will be creating.
 As an example, the IBM Cloud Satellite L3 is specified in this <a href="https://github.com/IBM/SalesEnablement-Satellite-L3" target="_blank">GitHub repository</a> and the MKDOCS build output can be found <a href="https://ibm.github.io/SalesEnablement-Satellite-L3/" target="_blank">here</a>.</p>
 <p>MkDocs is well documented here: <a href="https://www.mkdocs.org/" target="_blank">https://www.mkdocs.org/</a>.
-You can also do google searches on MkDocs for lots of other useful content and primers.</p>
+You can also do google searches on MkDocs for lots of other useful content and primers. </p>
+<p>The steps that follow assume you have <strong>python</strong> already installed. If you do not, you will need to install them first. More specific instructions can be found in the <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">MkDocs Installation guide</a> which includes a link on how to install <a href="https://www.python.org/" target="_blank">Python</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Windows users</p>
+<p>If you are using Windows, some of the commands below may not work. Try using <strong>python -m</strong> like this:
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    python -m pip install mkdocs
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    python -m mkdocs
+</code></pre></div>
+For a more permanent solution, you may need to edit your PATH environment variable to include the Scripts directory of your Python installation. Recent versions of Python include a script to do this for you. Navigate to your Python installation directory (for example C:\Python38), open the Tools, then Scripts folder, and run the win_add2path.py file by double clicking on it. Alternatively, you can download the script and run it (python win_add2path.py).
+</div>
 <p>To install, follow these steps:</p>
 <ol>
 <li>Install <strong>pip</strong>:</li>
 </ol>
-<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3 -m pip install --upgrade pip
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3 -m pip install --upgrade pip
 </code></pre></div>
 or
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3 -m pip3 install --upgrade pip3
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3 -m pip3 install --upgrade pip3
 </code></pre></div>
 <ol start="2">
 <li>Install <strong>MKDOCS</strong></li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip install mkdocs
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip install mkdocs
 </code></pre></div>
 <p>or</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip3 install mkdocs
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip3 install mkdocs
 </code></pre></div>
 <ol start="3">
 <li>Install MKDOCS <strong>material theme</strong></li>
 </ol>
 <p><strong>Material</strong> is the name of the theme we are using in MkDocs.  You can learn more about it <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">here</a>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip install mkdocs-material
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip install mkdocs-material
 </code></pre></div>
 <p>or </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip3 install mkdocs-material
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip3 install mkdocs-material
 </code></pre></div>
 <ol start="4">
 <li>Install MKDOCS macros plugin</li>
 </ol>
 <p>The <strong>macros plugin</strong> for MkDocs provides lots of useful tools that we use in our builds.  You can learn more about it <a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/" target="_blank">here</a>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip install mkdocs-macros-plugin
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip install mkdocs-macros-plugin
 </code></pre></div>
 <p>or </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip3 install mkdocs-macros-plugin
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip3 install mkdocs-macros-plugin
 </code></pre></div>
 <ol start="5">
 <li>Install MkDocs video plugin</li>
 </ol>
 <p>The MkDocs <strong>video plugin</strong> is used to embed videos in our documents.  You can learn more about it <a href="https://pypi.org/project/mkdocs-video/" target="_blank">here</a>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip install mkdocs-video
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pip install mkdocs-video
 </code></pre></div>
 <p>or</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pip3 install mkdocs-video
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pip3 install mkdocs-video
+</code></pre></div>
+<ol start="6">
+<li>Need to see if this works:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pip install pymdown-extensions
+</code></pre></div>
+<p>or </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>pip3 install pymdown-extensions
 </code></pre></div>
 <p>Note, there are many more plugins that you may find useful in your content development. </p></div>
 
@@ -856,11 +873,6 @@ or
       Copyright &copy; 2022 IBM
     </div>
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
