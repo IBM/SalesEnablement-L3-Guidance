@@ -1,4 +1,8 @@
-It is strongly suggested you read through the MkDocs and Material theme documentation prior go building content.  You can also leverage existing content as working examples like the IBM Cloud Satellite L3 content (<a href="https://ibm.github.io/SalesEnablement-Satellite-L3/" target="_blank">here</a>).
+It is strongly suggested you read through the MkDocs and Material theme documentation prior go building content.  You can also leverage existing content as working examples like the IBM Cloud Power Virtual Server L3 content:
+
+- <a href="https://ibm.github.io/SalesEnablement-PowerVS-L3/" target="_blank">Published content</a>
+
+-    <a href="https://github.com/IBM/SalesEnablement-PowerVS-L3" target="_blank">Source content</a>
 
 Where possible, you should follow the style guidelines from our <a href="https://w3.ibm.com/w3publisher/getting-started-in-technology-sales" target="_blank">Center of Excellence</a>.
 
