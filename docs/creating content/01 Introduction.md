@@ -1,5 +1,7 @@
 It is strongly suggested you read through the MkDocs and Material theme documentation prior go building content.  You can also leverage existing content as working examples like the IBM Cloud Satellite L3 content (<a href="https://ibm.github.io/SalesEnablement-Satellite-L3/" target="_blank">here</a>).
 
+Where possible, you should follow the style guidelines from our <a href="https://w3.ibm.com/w3publisher/getting-started-in-technology-sales" target="_blank">Center of Excellence</a>.
+
 A few suggestions:
 
   - Videos
@@ -12,3 +14,15 @@ A few suggestions:
   - Links
 
     When linking to external content, make sure you use ``` target="_blank" ``` in your href.  This will force the link to open in a new tab or window of the user's browser.
+
+  - Make things line up
+  
+    Things should line up in your content as described in the COE. MKDOCS can be a little strange to figure out. For instance, to ge an image to line up under a numbered item, you must have the image definition preceded by 4 spaces, like:
+
+    ```
+    1. Click the IBM Cloud portal menu ![](_attachments/hamburgerIcon.png), expand the **Observability** menu and click **Monitoring**.
+
+        ![](_attachments/MonitoringMenu.png)
+    ```
+
+

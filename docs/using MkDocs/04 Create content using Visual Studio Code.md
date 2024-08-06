@@ -13,48 +13,72 @@ As you modify your **mkdocs.yml** file and add content in your **docs** director
 
 Note: As a best practice you should utilize branches, pull requests, etc. in **GitHub**. 
 
-Here is an example mkdcos.yml file for the material theme:
+Here is an example mkdocs.yml file for the material theme:
 
 ```
 # Project info
-site_name: IBM Sales Enablement - L3 - Creation  Guidance
-site_description: Guidance for creating L3 content and learning plans for Sales Enablement
+site_name: IBM Power Virtual Server Level 3 Demonstration Guide
+site_description: IBM Power Virtual Server Sales Enablement Level 3 Demonstration Guide
 site_author: Andrew R. Jones (andrewj@us.ibm.com)
 copyright: Copyright &copy; 2022 IBM
 
 # Repository
-repo_name: IBM/SalesEnablement-L3-Guidance
+repo_name: IBM/SalesEnablement-test-repo
+#repo_url: https://github.com/IBM/SalesEnablement-PowerVS-L3
+#edit_uri: edit/master/docs
 docs_dir: docs
 
 
 nav:
-  - Part 1 - Setting up your Mac:
-    - 'Introduction': 'mac-setup/01 Introduction.md'
-    - 'Install git': 'mac-setup/02 Install git.md'
-    - 'Install MkDocs and plugins': 'mac-setup/03 Install MKDOCS and plugins.md'
-    - 'Visual Studio Code': 'mac-setup/04 Visual Studio Code.md'
-  - Part 2 - Setting up your Git repository:
-    - 'Introduction': 'git-setup/01 Introduction.md'
-    - 'Create IBM GitHub repository': 'git-setup/02 Create IBM GitHub respository.md'
-    - 'Configure GitHub Pages': 'git-setup/03 Configure GitHub Pages.md'
-  - Part 3 - Using MKDOCS:
-    - 'Introduction': 'using MkDocs/01 Introduction.md'
-    - 'Clone your git repository': 'using MkDocs/02 Clone your git repository.md'
-    - 'Create MkDocs project': 'using MkDocs/03 Create MkDocs project.md'
-    - 'Create content using Visual Studio Code': 'using MkDocs/04 Create content using Visual Studio Code.md'
-    - 'Doing your first MkDocs gh-deploy': 'using MkDocs/05 Doing your first MkDocs gh-deploy.md'
-  - Part 4 - IBM Technology Zone:
-    - 'Introduction': 'TechZone/01 Introduction.md'
-    - 'Satellite L3 Details': 'TechZone/02 Satellite L3.md'
-  - Part 5 - Creating content:
-        - 'Introduction': 'creating content/01 Introduction.md'
+  - Introduction: 'index.md'
+  - Part 1 - Overview:
+    - 'Introduction': 'Part 1/01 Introduction.md'
+    - 'Reserve the environment': 'Part 1/02 Reserve.md'
+  - Part 2 - Provisioning a PowerVS workspace:
+    - 'Introduction': 'Part 2/01 Introduction.md'
+    # - 'Watch a service being provisioned': 'Part 2/02 Watch-service.md'
+    - 'Click through demonstration of a workspace being provisioned': 'Part 2/03 Clickthru-service.md'
+  - Part 3 - Provisioning a PowerVS instance:
+    - 'Introduction': 'Part 3/01 Introduction.md'
+    # - 'Watch a instance being provisioned': 'Part 3/02 Watch-instance.md'
+    - 'Click through provisioning demonstration - AIX': 'Part 3/03 Clickthru-AIXvsi.md'
+    - 'Click through provisioning demonstration - Linux': 'Part 3/04 Clickthru-Linuxvsi.md'
+    - 'Click through provisioning demonstration - IBM i': 'Part 3/05 Clickthru-IBMivsi.md'
+  - Part 4 - Managing PowerVS instances:
+    - 'Introduction': 'Part 4/01 Introduction.md'
+    - 'Managing instances': 'Part 4/02 Explore-managing-instances.md'
+  - Part 5 - Accessing PowerVS instances:
+    - 'Introduction': 'Part 5/01 Introduction.md'
+    - 'Access an instance': 'Part 5/02 Access-instance.md'
+  - Part 6 - Explore other PowerVS topics:
+    - 'Introduction': 'Part 6/01 Introduction.md'
+    - 'Virtual appliances': 'Part 6/02 VirtualAppliances.md'
+    - 'Shared processor pools': 'Part 6/03 SPPsAndServerPlacementGroups.md'
+    - 'SSH keys': 'Part 6/04 SSHKeys.md'
+    - 'Boot images': 'Part 6/05 BootImages.md'
+    - 'Networking': 'Part 6/06 Networking.md'
+    - 'Storage volumes': 'Part 6/07 StorageVolumes.md'
+    - 'Event logs': 'Part 6/08 EventLogs.md'
+    - 'Additional products and services': 'Part 6/09 AdditionalServices.md'
+  - Part 7 - Use the PowerVS command line interfaces (CLI):
+    - 'Introduction': 'Part 7/01 Introduction.md'
+    - 'Command line exercises': 'Part 7/02 CLIs.md'
+  - Part 8 - Observing PowerVS resources:
+    - 'Introduction': 'Part 8/01 Introduction.md'
+    - 'IBM Cloud Monitoring': 'Part 8/02 IBM Cloud Monitoring.md'
+    - 'IBM Activity Tracker': 'Part 8/03 IBM Cloud Activity Tracker.md'
+  - Part 9 - New features:
+    - 'Introduction': 'Part 9/01 Introduction.md'
+    - 'Dedicated hosts': 'Part 9/02 Dedicated hosts.md'
+    - 'Deployable architectures': 'Part 9/03 Deployable architectures.md'
+  - Part 10 - Next steps:
+    - 'Next steps': 'Part 10/01 Next steps.md'
 
 theme:
   name: material
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.top
     - content.code.annotate
     - content.code.copy
   palette:
@@ -70,12 +94,9 @@ theme:
         name: Switch to light mode
 
 plugins:
-    - search
     - mkdocs-video
     - macros
-
-extra:
-  generator: false
+    - search
 
 markdown_extensions:
   - sane_lists
@@ -87,25 +108,55 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.keys
+  - attr_list
+  - md_in_html
 
 extra:
+  generator: false
+  supportEmail: "andrewj@us.ibm.com"
+  supportSlack: 
+    name: "#cloud-platform-demo-feedback"
+    url: "https://ibm-technology-sales.slack.com/archives/C03PQ47KRQE"
   learningplan:
-    name: "IBM Cloud Satellite Sales Level 3"
-    url: "https://yourlearning/"
+    name: "IBM Power Virtual Server for Technical Sales - Level 3"
+    url: "https://yourlearning.ibm.com/activity/PLAN-7D757C8B58E7"
+  offering:
+    name: "IBM Power Virtual Server"
+  guide:
+    name: "IBM Power Virtual Server - Level 3 Demonstration Guide"
+    url: "https://ibm.github.io/SalesEnablement-PowerVS-L3/"
   tz_environment:
-    name: "IBM Cloud Satellite - Sales Enablment L3"
+    name: "IBM Power Virtual Server - Sales Enablment L3"
     url: "https://techzone.ibm.com/my/reservations"
-    uuid_label: "Demo-UUID"
-  account: "2435442 - ITZ - Satellite"
-  aws:
-    location: aws-us-east-2
-    host_ip: ip-10-0-1-114
-    cluster_name: aws_os_cluster
-    cluster_id: c7o5jt8w0o6g5fkl3rp0
-    ingress: aws-os-cluster-222b3514854c2221251113b2b051506c-0000.upi.containers.appdomain.cloud
-  ibm:
-    cluster_name: ibmcloud-wdc-os
-    cluster_id: c7o68suw0jvhnc82ukg0
-    ingress: ibmcloud-wdc-os-222b3514854c2221251113b2b051506c-0000.us-east.containers.appdomain.cloud
-
+  account: "2305900 - ITZ - ADHOC03"
+  powerVS:
+    serviceInstanceName: "PowerVS-L3-2024"
+    serviceInstanceRG: "PowerVS-L3"
+    serviceInstanceLocation: "WDC07"
+    placementGroup1: "GroupTogether"
+    placementGroup2: "GroupApart"
+    sshKey: "PowerVS-key"
+    privateSubnet: "private-powervs-2024"
+    privateSubnetCIDR: "192.168.100.0/24"
+    privateSubnetGW: "192.168.100.15"
+    privateSubnetDNS: "127.0.0.1"
+    publicSubnet: "public-192_168_222_192-29-VLAN_2056
+"
+    monitoringInstance: "PowerVS-L3-Monitoring"
+    atInstance: "AT-PowerVS-L3"
+  aixServer1:
+    name: "AIX-VM"
+    privateIP: "192.168.100.112"
+    publicIP: "150.239.207.227"
+    additionalVolumeName: "aix-av1"
+  linuxServer1:
+    name: "Linux-VM"
+    privateIP: "192.168.100.173"
+    publicIP: "150.239.207.226"
+    additionalVolumeName: "linux-av1"
+  ibmiServer1:
+    name: "IBMi-VM"
+    privateIP: "192.168.100.157"
+    publicIP: "150.239.207.228"
+    additionalVolumeName: "ibmi-av1"
 ```

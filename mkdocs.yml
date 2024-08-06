@@ -7,14 +7,16 @@ copyright: Copyright &copy; 2022 IBM
 # Repository
 repo_name: IBM/SalesEnablement-L3-Guidance
 docs_dir: docs
+#repo_url: https://github.com/IBM/SalesEnablement-L3-Guidance
+#edit_uri: edit/master/docs
 
 
 nav:
-  - Part 1 - Setting up your Mac:
-    - 'Introduction': 'mac-setup/01 Introduction.md'
-    - 'Install git': 'mac-setup/02 Install git.md'
-    - 'Install MkDocs and plugins': 'mac-setup/03 Install MKDOCS and plugins.md'
-    - 'Visual Studio Code': 'mac-setup/04 Visual Studio Code.md'
+  - Part 1 - Setting up your machine:
+    - 'Introduction': 'machine-setup/01 Introduction.md'
+    - 'Install git': 'machine-setup/02 Install git.md'
+    - 'Install MkDocs and plugins': 'machine-setup/03 Install MKDOCS and plugins.md'
+    - 'Visual Studio Code': 'machine-setup/04 Visual Studio Code.md'
   - Part 2 - Setting up your Git repository:
     - 'Introduction': 'git-setup/01 Introduction.md'
     - 'Create IBM GitHub repository': 'git-setup/02 Create IBM GitHub respository.md'
@@ -69,13 +71,20 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.keys
+  - attr_list
+  - md_in_html
 
 extra:
+  generator: false
+  supportEmail: "andrewj@us.ibm.com"
+  supportSlack: 
+    name: "#cloud-platform-demo-feedback"
+    url: "https://ibm-technology-sales.slack.com/archives/C03PQ47KRQE"
   learningplan:
-    name: "IBM Cloud Satellite Sales Level 3"
+    name: "Sales Enablement Guidance"
     url: "https://yourlearning/"
   tz_environment:
-    name: "IBM Cloud Satellite - Sales Enablment L3"
+    name: "Sales Enablement Guidance"
     url: "https://techzone.ibm.com/my/reservations"
     uuid_label: "Demo-UUID"
   account: "2435442 - ITZ - Satellite"

@@ -6,7 +6,7 @@ Install Visual Code Studio using the normal install process of any program from 
 
 When cloning a repository from GitHub, use SSH and not HTTPS. HTTPS caused lots of permission errors.
 
-Extensions you may want to install:
+Extensions you may want to install from the <a href="https://marketplace.visualstudio.com/" target="_blank">VSC catalog</a> include:
 
 - Ansible
 - Acrolinx
@@ -17,3 +17,5 @@ Extensions you may want to install:
 - Auto Open Markdown Preview
 - Hashicorp Terraform
 
+
+To learn more about extensions go <a href="https://code.visualstudio.com/docs/editor/extension-marketplace" target="_blank">here</a>. 

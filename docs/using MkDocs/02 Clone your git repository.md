@@ -5,25 +5,26 @@ Note, there Visual Studio Code does have a wizard that will allow you to perform
 1. Open a terminal on your Mac.
 2. Create a working directory for your repositories.
 
-I chose ~/Documents/MKDOCS. Probably not the most logical choice. Since that is where mine is any screen images I put in here will show that.
+    I chose ~/Documents/MKDOCS. Probably not the most logical choice. Since that is where mine is any screen images I put in here will show that.
 
-```
-mkdir ~/Documents/MKDOCS
-```
+    ```
+    mkdir ~/Documents/MKDOCS
+    ```
 
 3. Change directory to the directory you just created.
 
-```
-cd ~/Documents/MKDOCS
-```
+    ```
+    cd ~/Documents/MKDOCS
+    ```
 
 4. Copy the **git clone** command for your IBM GitHub repository.
 
-![](_attachments/gitCloneCommand.png)
+    ![](_attachments/gitCloneCommand.png)
 
 5. Paste and execute the **git clone** command for your IBM GitHub repository in your terminal.
 
-!!! example
+    !!! example
+    
     andrewjones@MacBook-Pro-2 MKDOCS % gh repo clone IBM/SalesEnablement-L3-Guidance
 
     Cloning into 'SalesEnablement-L3-Guidance'...
