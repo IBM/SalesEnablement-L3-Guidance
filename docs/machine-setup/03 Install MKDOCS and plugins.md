@@ -20,7 +20,7 @@ To install, follow these steps:
 1. Install **pip**:
 
 ```
-python3 -m pip install --upgrade pip
+python -m pip install --upgrade pip
 ```
 or
 ```
@@ -93,4 +93,4 @@ or
 pip3 install pymdown-extensions
 ```
 
-Note, there are many more plugins that you may find useful in your content development. 
+Note, there are many more MkDocs <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes" target="_blank">themes</a> and <a href="https://github.com/mkdocs/catalog" target="_blank">plugins</a> that you may find useful in your content development.  However, to be consistent with other IBM Cloud L3s, I suggest sticking with the Material plugin that you just installed.

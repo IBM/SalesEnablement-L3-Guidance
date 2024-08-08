@@ -7,14 +7,14 @@ copyright: Copyright &copy; 2022 IBM
 # Repository
 repo_name: IBM/SalesEnablement-L3-Guidance
 docs_dir: docs
-#repo_url: https://github.com/IBM/SalesEnablement-L3-Guidance
-#edit_uri: edit/master/docs
+repo_url: https://github.com/IBM/SalesEnablement-L3-Guidance
+edit_uri: edit/master/docs
 
 
 nav:
   - Part 1 - Setting up your machine:
     - 'Introduction': 'machine-setup/01 Introduction.md'
-    - 'Install git': 'machine-setup/02 Install git.md'
+    - 'Install github desktop': 'machine-setup/02 Install git.md'
     - 'Install MkDocs and plugins': 'machine-setup/03 Install MKDOCS and plugins.md'
     - 'Visual Studio Code': 'machine-setup/04 Visual Studio Code.md'
   - Part 2 - Setting up your Git repository:

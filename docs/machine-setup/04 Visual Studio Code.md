@@ -1,21 +1,26 @@
-I initially used the Atom editor which provided a nice tool for not only editing the markdown content that we create, but it also integrated with GitHub making it easy to push content from your local copy to GitHub. However support for Atom has been discontinued.
+Using the IBM app store for your operating system, install Visual Code Studio (VSC). 
 
-Instead, I am now using Visual Code Studio which is available via the Mac@IBM app store. I assume it is also available for Windows and Linux, but that I have not investigated.
+Mac@IBM application
 
-Install Visual Code Studio using the normal install process of any program from the Mac@IBM app store.
+<a href="https://w3.ibm.com/download/standardsoftware/PC/lang_en/issiCatalogPC.html" target="_blank">IBM Windows App Store</a>
 
-When cloning a repository from GitHub, use SSH and not HTTPS. HTTPS caused lots of permission errors.
+![](_attachments/VSC.png)
 
-Extensions you may want to install from the <a href="https://marketplace.visualstudio.com/" target="_blank">VSC catalog</a> include:
+More information about VSC can be found <a href="https://code.visualstudio.com/" target="_blank">here</a>.
 
-- Ansible
+Install the following VSC extensions. This is done using VSC, but you can also explore the <a href="https://marketplace.visualstudio.com/" target="_blank">VSC catalog</a>. To learn more about extensions go <a href="https://code.visualstudio.com/docs/editor/extension-marketplace" target="_blank">here</a>. 
+
 - Acrolinx
+- Auto-Open Markdown Preview
 - Code Spell Checker
+- GitHub Pull Requests
 - GitHub Repositories
+- Hashicorp Terraform
 - Markdown All in One
 - Markdown Preview
-- Auto Open Markdown Preview
-- Hashicorp Terraform
+- Markdown Preview Enhanced
+- YAML
 
+Here is a short video that shows how to install an extension in VSC:
 
-To learn more about extensions go <a href="https://code.visualstudio.com/docs/editor/extension-marketplace" target="_blank">here</a>. 
+![](_attachments/GitHubInstallExtension-final.mp4)
