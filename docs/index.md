@@ -8,9 +8,3 @@ Some of the content here is based upon the work Jeff Goodhue et al. did related 
 There are 5 parts to this guidance which are accessible in the navigation to the left.
 
 I'm sure there is more missing, but its a start.
-
-<!-- 
-
-!!! Note "Cloning repositories"
-
-    When cloning a repository from GitHub, use SSH and not HTTPS. HTTPS caused lots of permission errors. In some cases I've seen where the SSH option is shown in for a repository. More investigation may be needed.  -->
