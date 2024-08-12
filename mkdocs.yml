@@ -23,10 +23,12 @@ nav:
     - 'Configure GitHub Pages': 'git-setup/03 Configure GitHub Pages.md'
   - Part 3 - Using MKDOCS:
     - 'Introduction': 'using MkDocs/01 Introduction.md'
-    - 'Clone your git repository': 'using MkDocs/02 Clone your git repository.md'
+    - 'Clone the repository': 'using MkDocs/02 Clone the repository.md'
     - 'Create MkDocs project': 'using MkDocs/03 Create MkDocs project.md'
-    - 'Create content using Visual Studio Code': 'using MkDocs/04 Create content using Visual Studio Code.md'
-    - 'Doing your first MkDocs gh-deploy': 'using MkDocs/05 Doing your first MkDocs gh-deploy.md'
+    - 'The mkdocs file': 'using MkDocs/04 The mkdocs file.md'
+    - 'Creating content': 'using MkDocs/05 Creating content.md'
+    - 'Committing to GitHub': 'using MkDocs/06 Committing to GitHub.md'
+    - 'Building with MkDocs': 'using MkDocs/07 Building with MkDocs.md'
   - Part 4 - IBM Technology Zone:
     - 'Introduction': 'TechZone/01 Introduction.md'
     - 'Satellite L3 Details': 'TechZone/02 Satellite L3.md'

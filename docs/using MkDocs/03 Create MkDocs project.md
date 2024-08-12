@@ -1,36 +1,30 @@
-To start using MkDocs, you need to initialize your project folder. These steps can be performed in the Visual Code Studio **terminal** as well or via the GUI when opening a new widow.
+Now that you have a clone of the repository, next you need to initialize MkDocs for the repository. **These steps only need to be completed if you are creating a new L3 and working with a brand new repository. If you are modifying an existing L3 or playing with the test repository, you will not need to do these steps.**
 
-1. Open a **terminal**.
-2. Change directory to the parent directory of your IBM GitHub repository clone.
+## Initializing a new repository for MkDocs
 
-```
-cd ~/MKDOCS
-```
+1. Open a **terminal** in VSC.
+   
+![](_attachments/VSC-newTerminal.png)
 
-3. Run the **mkdocs new** command:
+You can resize the terminal window by grabbing the frame bar between the welcome screen and the terminal. Notice the terminal opens with the path set to the directory that was created for your clone repository.
 
-```
-mkdocs new SalesEnablement-L3-guidance
-```
-
-!!! example
-    INFO     -  Writing config file: SalesEnablement-L3-Guidance/mkdocs.yml
-    INFO     -  Writing initial docs: SalesEnablement-L3-Guidance/docs/index.md
-
-4. Verify there is now a **mkdocs.yml** file and a **docs** directory.
+2. Run the **mkdocs new** command specifying the current directory (.) for the name.
 
 ```
-cd SalesEnablement-L3-Guidance
-ls
+mkdocs new .
 ```
 
-!!! example
-    LICENSE       README.md      docs    mkdocs.yml
+![](_attachments/VSC-mkdocsNew.png)
 
-The LICENSE and README.md came from the clone of the repository and the mkdocs.yml file and docs directory were created by MkDocs.
+Notice 2 new files and the **docs** directory are created.
 
-5. In your project directory, create a **.gitignore** file to ignore the MkDocs build files that don't need to be pushed to your repository.
+3. In the VCS terminal, create a **.gitignore** file to ignore file. 
 
 ```
 echo "site/" >> .gitignore
 ```
+
+The .gitignore is used to exclude certain files or directories from being pushed up to the GitHub repository. The above command created the file and populated with the **site** directory. The **site** directory will contain build files that MkDocs generates. These files do not need to be pushed up to GitHub.
+
+![](_attachments/VCS-gitignore.png.png)
+
