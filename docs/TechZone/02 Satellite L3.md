@@ -1,3 +1,6 @@
+!!! Warning "This section needs to be re-written. Some links are broken. Left here for informational purposes."
+
+
 The information is specific to the custom <a href="https://techzone.ibm.com/collection/se-l3-ibm-cloud-satellite" target="_blank">{{ learningplan.name }}</a> TechZone environment. You will want to create a similar document for any new environments in the event it needs to be rebuilt. Given my experience with TechZone, this will most likely happen as I was forced to rebuild 3 times for various reasons.
 
 The TechZone environment created for this L3 is a **shared/multi-tenant** environment. In other words, instead of like other infrastructure TechZone environments where each user gets their own instances of resources, here a common set of cloud resources are shared by all users. The common resources need to be appropriately protected so users cannot cause damage to the shared resources. This is typically done by only granting the users the IBM Cloud IAM (identify access management) capabilities they require to accomplish their tasks and isolating the environment where they make changes. This is accomplished when TechZone processes the user's reservation for the environment.

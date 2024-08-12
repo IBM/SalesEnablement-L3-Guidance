@@ -1,7 +1,7 @@
 # SalesEnablement-L3-Guidance
 This repository provides guidance for creating IBM Cloud Sales Enablement L3 Learning Plan content using Git Hub as a content repository and MkDocs to generate the end-user HTML and web site. 
 
-The content provided here is based upon my personal experience in creating our first IBM Cloud platform Level 3 learning plan: (<a href="https://yourlearning.ibm.com/activity/PLAN-7D757C8B58E7" target="_blank">IBM Cloud Satellite</a>).
+The content provided here is based upon my personal experience in creating our first IBM Cloud platform Level 3 learning plan.
 
 In several chapters you will see a warning message like this:
 

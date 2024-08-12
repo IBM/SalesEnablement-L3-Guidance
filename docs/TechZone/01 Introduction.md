@@ -1,3 +1,6 @@
+!!! Warning "This section needs to be re-written. Some links are broken. Left here for informational purposes."
+
+
 IBM Technology Zone (TechZone) should be used for demonstration environments if possible. Their are many environments already built and collections that utilize them.
 
 The focus here is on IBM Cloud platform, so I'll relate how we created the environment and collection related to the IBM Cloud Satellite L3 learning plan.
