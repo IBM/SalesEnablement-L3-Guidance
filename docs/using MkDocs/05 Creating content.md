@@ -22,3 +22,6 @@ Recall from the **nav** section that the first page of the published output is t
 
 As you save documents in VSC, only your local repository is being updated at this time. You will notice a number appear next to the **Source Control** icon in VSC. Learn how to **push** your changes to the master GitHub repository and how to build the MkDocs output in the next chapters.
 
+!!! Tip "There is a lot more to VSC"
+
+    Not only in addition to the other extensions you may have seen, there are a lot of built-in capabilities of VSC. I encourage you to play around and also google VSC to learn more. Also play, with the plug-ins that I suggested installing like the spell checker and Acrolinx. I'll try and add sections for these in the future.
