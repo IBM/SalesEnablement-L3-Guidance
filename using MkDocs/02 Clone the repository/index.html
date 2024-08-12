@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../01%20Introduction/">
+      
+      
+        <link rel="next" href="../03%20Create%20MkDocs%20project/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>04 Create content using Atom editor - IBM Sales Enablement - L3 - Creation  Guidance</title>
+        <title>Clone the repository - IBM Sales Enablement - L3 - Creation  Guidance</title>
       
     
     
@@ -74,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#clone-the-repository-to-your-local-machine" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -106,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              04 Create content using Atom editor
+              Clone the repository
             
           </span>
         </div>
@@ -469,18 +478,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -494,7 +505,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Part 3 - Using MKDOCS
@@ -525,17 +536,60 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../02%20Clone%20your%20git%20repository/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Clone the repository
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Clone your git repository
+    Clone the repository
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository-to-your-local-machine" class="md-nav__link">
+    Clone the repository to your local machine
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -567,11 +621,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../04%20Create%20content%20using%20Visual%20Studio%20Code/" class="md-nav__link">
+      <a href="../04%20The%20mkdocs%20file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Create content using Visual Studio Code
+    The mkdocs file
   </span>
   
 
@@ -587,11 +641,51 @@
   
   
     <li class="md-nav__item">
-      <a href="../05%20Doing%20your%20first%20MkDocs%20gh-deploy/" class="md-nav__link">
+      <a href="../05%20Creating%20content/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Doing your first MkDocs gh-deploy
+    Creating content
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20Committing%20to%20GitHub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Committing to GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07%20Building%20with%20MkDocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building with MkDocs
   </span>
   
 
@@ -772,6 +866,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository-to-your-local-machine" class="md-nav__link">
+    Clone the repository to your local machine
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -788,21 +897,39 @@
   
 
 
-  <h1>04 Create content using Atom editor</h1>
+  <h1>Clone the repository</h1>
 
-<div><p>You are ready to start creating content.  For this example we will keep it real simple.</p>
+<div><p>We will be using Visual Code Studio (VSC) to do most your work, however, there will be times when you will need to use a web browser to access the github repository (especially if creating a new course). I'll note when something doesn't have to be done if your just updating a course.</p>
+<h2 id="clone-the-repository-to-your-local-machine">Clone the repository to your local machine</h2>
+<p>You can use the new repository you created earlier if you are creating a new course, use and existing L3 repository, or you can play with this test repository: <a href="https://github.com/IBM/SalesEnablement-L3-test-repo2" target="_blank">https://github.com/IBM/SalesEnablement-L3-test-repo2</a>.</p>
 <ol>
-<li>Open the <strong>Atom</strong> editor.</li>
-<li>In <strong>Atom</strong> create add new project folder using <strong>File-&gt;Add Project Folder</strong></li>
+<li>Open the repository in your browser.</li>
+<li>Click the green <strong>Code</strong> drop down.</li>
+<li>Click the <strong>SSH</strong> tab under <strong>Clone</strong>. </li>
+<li>Copy the SSH clone link.</li>
 </ol>
-<p>This will open a file dialog.  Select your IBM GitHub clone directory (e.g. <strong>~/Documents/MKDOCS/SalesEnablement-L3-Guidance</strong>).</p>
-<p>The new project will appear in the left hand navigation.  If you expand it, you will see the <strong>mkdocs.yml</strong> file and <strong>docs</strong> directory.</p>
-<p>At this point, you need to read the MkDocs user's guide for how to create content and update your <strong>mkdocs.yml</strong> file.  You can use <a href="https://github.com/IBM/SalesEnablement-L3-Guidance" target="_blank">repository</a> as an example.</p>
-<p>As you modify your <strong>mkdocs.yml</strong> file and add content in your <strong>docs</strong> directory, you will notice on the left hand side of the <strong>Atom</strong> editor that <strong>Unstaged Changes</strong> are added when you save your work.  When you are ready, you can move those changes a Staging area by clicking the <strong>Stage All</strong> link.</p>
-<p><img alt="" src="_attachments/atomStageAll"></p>
-<p>If you are happy with those changes, you can commit them to your IBM GitHub repository by entering a <strong>commit message</strong> and clicking the <strong>Commit to main</strong> button.</p>
-<p><img alt="" src="_attachments/commitToMain"></p>
-<p>Note: As a best practice you shoudl utilize brances, pull requests, etc. in <strong>GitHub</strong>. </p></div>
+<p><img alt="" src="../_attachments/GetCloneLink.png"></p>
+<ol start="5">
+<li>Open VSC.</li>
+<li>At the VSC welcome screen, click <strong>Clone Git Repository</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/VSC-Welcome.png"></p>
+<ol start="7">
+<li>Paste the SSH clone link for the repository in to the entry field and <strong>Enter</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/VSC-Clone.png"></p>
+<ol start="8">
+<li>Specify where you want to save your clone on your local machine and then click <strong>Select as Repository Destination</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/VSC-cloneRepoSave.png"></p>
+<div class="admonition note">
+<p class="admonition-title">Where should I save this?</p>
+<p>It really doesn't matter, but I would suggest creating a directory where you will keep all your Sales Enablement L3s. Perhaps something like <strong>~/Documents/SalesEnablementL3s/</strong>. When you specify the directory, it will create a subdirectory with the name of the repository.</p>
+</div>
+<ol start="9">
+<li>Click either <strong>Open</strong> or <strong>Open in New Window</strong> on the pop-up dialog.</li>
+</ol>
+<p>You now have successfully clone the repository form GitHub to your local machine.</p></div>
 
 
 

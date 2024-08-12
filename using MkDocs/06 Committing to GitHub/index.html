@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../04%20Create%20content%20using%20Visual%20Studio%20Code/">
+        <link rel="prev" href="../05%20Creating%20content/">
       
       
-        <link rel="next" href="../../TechZone/01%20Introduction/">
+        <link rel="next" href="../07%20Building%20with%20MkDocs/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Doing your first MkDocs gh-deploy - IBM Sales Enablement - L3 - Creation  Guidance</title>
+        <title>Committing to GitHub - IBM Sales Enablement - L3 - Creation  Guidance</title>
       
     
     
@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#committing-your-updates" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -110,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Doing your first MkDocs gh-deploy
+              Committing to GitHub
             
           </span>
         </div>
@@ -533,11 +538,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../02%20Clone%20your%20git%20repository/" class="md-nav__link">
+      <a href="../02%20Clone%20the%20repository/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Clone your git repository
+    Clone the repository
   </span>
   
 
@@ -573,11 +578,31 @@
   
   
     <li class="md-nav__item">
-      <a href="../04%20Create%20content%20using%20Visual%20Studio%20Code/" class="md-nav__link">
+      <a href="../04%20The%20mkdocs%20file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Create content using Visual Studio Code
+    The mkdocs file
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05%20Creating%20content/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating content
   </span>
   
 
@@ -600,16 +625,71 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Committing to GitHub
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Doing your first MkDocs gh-deploy
+    Committing to GitHub
   </span>
   
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#committing-your-updates" class="md-nav__link">
+    Committing your updates
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07%20Building%20with%20MkDocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building with MkDocs
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -786,6 +866,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#committing-your-updates" class="md-nav__link">
+    Committing your updates
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -802,71 +897,34 @@
   
 
 
-  <h1>Doing your first MkDocs gh-deploy</h1>
+  <h1>Committing to GitHub</h1>
 
-<div><p>Once these changes are commit, to do the build with MkDocs, follow these steps.</p>
+<div><p>After saving all your open documents in Visual Code Studio (VSC), it is time to commit those changes to the master repository in GitHub. </p>
+<p>Recall, GitHub is all about document management. In a typical software development process you would create a <strong>branch</strong> make modifications there, do your testing, and then <strong>merge</strong> that <strong>branch</strong> into the <strong>master</strong> branch. We should probably do this as well, but there seems to be a limitation with GitHub Pages (which is what we use to serve the final content with). The limitation is that you can only have one Pages site and you can't have a branch site. I get around this when refreshing a course by creating a separate "test" GitHub repository, do my content creation and testing of output there, and then copy all those files to the specific GitHub repository and do a final build there and publish the output. This isn't a big issue for creating new courses or making small "on-the-fly" changes, but it is an issue with doing large refreshes. You don't want to publish parts of a refresh that may affect current users.</p>
+<p>Feel free to contact me individually and we can discuss above in detail when the time comes. For now, we will pretend we are creating a new course or just making an "on-the-fly" change.</p>
+<h3 id="committing-your-updates">Committing your updates</h3>
 <ol>
-<li>Open a <strong>terminal</strong> in Visual Code Studio</li>
-<li>Run <strong>mkdocs gh-deploy</strong></li>
+<li>Click the <strong>Source Control</strong> icon in VSC.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdocs gh-deploy
-</code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>INFO     -  [macros] - Macros arguments: {'module_name': 'main',</p>
-<div class="highlight"><pre><span></span><code>   'modules': [], 'include_dir': '', 'include_yaml': [],
-
-   'j2_block_start_string': '', 'j2_block_end_string': '',
-
-   'j2_variable_start_string': '', 'j2_variable_end_string': '',
-
-   'verbose': False}
-</code></pre></div>
-<p>INFO     -  [macros] - Extra variables (config file): ['learningplan',</p>
-<div class="highlight"><pre><span></span><code>   'tz_environment', 'account', 'aws', 'ibm']
-</code></pre></div>
-<p>INFO     -  [macros] - Extra filters (module): ['pretty']</p>
-<p>INFO     -  Cleaning site directory</p>
-<p>INFO     -  Building documentation to directory:</p>
-<div class="highlight"><pre><span></span><code>   /Users/andrewjones/Documents/MKDOCS/SalesEnablement-L3-Guidance/site
-</code></pre></div>
-<p>INFO     -  The following pages exist in the docs directory, but are not</p>
-<div class="highlight"><pre><span></span><code>   included in the "nav" configuration:
-
-                    - index.md
-</code></pre></div>
-<p>INFO     -  Documentation built in 0.75 seconds</p>
-<p>INFO     -  Copying</p>
-<div class="highlight"><pre><span></span><code>   '/Users/andrewjones/Documents/MKDOCS/SalesEnablement-L3-Guidance/site'
-
-   to 'gh-pages' branch and pushing to GitHub.
-</code></pre></div>
-<p>Counting objects: 87, done.</p>
-<p>Delta compression using up to 16 threads.</p>
-<p>Compressing objects: 100% (71/71), done.</p>
-<p>Writing objects: 100% (87/87), 3.67 MiB | 1.11 MiB/s, done.</p>
-<p>Total 87 (delta 17), reused 0 (delta 0)</p>
-<p>remote: Resolving deltas: 100% (17/17), done.</p>
-<p>To https://github.com/IBM/SalesEnablement-L3-Guidance.git</p>
-<p>bb3eecb..9cd7e92  gh-pages -&gt; gh-pages</p>
-<p>INFO     -  Your documentation should shortly be available at:</p>
-<div class="highlight"><pre><span></span><code>   https://IBM.github.io/SalesEnablement-L3-Guidance/
-</code></pre></div>
-</div>
-<p>You will need to carefully review the output of the <strong>mkdocs gh-deploy</strong> command.  If you see <strong>WARNING</strong> these are typically mismatches between files you are trying to include in your mkdocs.yml navigation and the actual file names in the project.</p>
-<p>Check the status your deployment in <strong>GitHub</strong> web UI.</p>
+<p><img alt="" src="../_attachments/VCS-sourceControl.png"></p>
+<ol start="2">
+<li>Enter a <strong>message</strong> about what you are committing.</li>
+</ol>
+<p>You should try to make this a meaningful message as it will appear as part of the history of the updates in GitHub.</p>
+<p>Notice below the <strong>Commit</strong> button are all the files that have been modified, added, or removed.</p>
+<p><img alt="" src="../_attachments/VCS-commitMessage.png"></p>
 <ol start="3">
-<li>Click the <strong>github-pages</strong> link at bottom right of screen.</li>
+<li>Click <strong>Commit</strong>.</li>
 </ol>
-<p><img alt="" src="../_attachments/checkOnMkDocsDeployment-1.png"></p>
-<p>It may take a few minutes for your build to be scheduled and completed.</p>
+<p><img alt="" src="../_attachments/VCS--commit.png"></p>
+<p>Note, you can perform many commits (thus adding more messages and info in GitHub). This doesn't actually push the files up to GitHub, that comes next.</p>
 <ol start="4">
-<li>Verify your the update has been deployed.</li>
+<li>Click <strong>Sync Changes</strong>.</li>
 </ol>
-<p><img alt="" src="../_attachments/checkOnMkDocsDeployment-2.png"></p>
-<ol start="5">
-<li>Click the <strong>View Deployment</strong> button to view the new web site.</li>
-</ol></div>
+<p><img alt="" src="../_attachments/VCS-sync.png"></p>
+<p>Note, adding a message here is not required, but a good practice.</p>
+<p>This step will vary in duration based on the number and size of the files that are being sent up to the GitHub repository.</p>
+<p>Once everything is commited and synced, you are now ready to use MkDocs to build the <strong>pretty</strong> version of your markdown content and publish it to GitHub pages.</p></div>
 
 
 

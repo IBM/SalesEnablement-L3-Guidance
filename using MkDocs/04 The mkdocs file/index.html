@@ -16,7 +16,7 @@
         <link rel="prev" href="../03%20Create%20MkDocs%20project/">
       
       
-        <link rel="next" href="../05%20Doing%20your%20first%20MkDocs%20gh-deploy/">
+        <link rel="next" href="../05%20Creating%20content/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Create content using Visual Studio Code - IBM Sales Enablement - L3 - Creation  Guidance</title>
+        <title>The mkdocs file - IBM Sales Enablement - L3 - Creation  Guidance</title>
       
     
     
@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#the-mkdocsyml-file" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -110,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Create content using Visual Studio Code
+              The mkdocs file
             
           </span>
         </div>
@@ -533,11 +538,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../02%20Clone%20your%20git%20repository/" class="md-nav__link">
+      <a href="../02%20Clone%20the%20repository/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Clone your git repository
+    Clone the repository
   </span>
   
 
@@ -580,15 +585,50 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    The mkdocs file
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Create content using Visual Studio Code
+    The mkdocs file
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-mkdocsyml-file" class="md-nav__link">
+    The mkdocs.yml file
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -601,11 +641,51 @@
   
   
     <li class="md-nav__item">
-      <a href="../05%20Doing%20your%20first%20MkDocs%20gh-deploy/" class="md-nav__link">
+      <a href="../05%20Creating%20content/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Doing your first MkDocs gh-deploy
+    Creating content
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20Committing%20to%20GitHub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Committing to GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07%20Building%20with%20MkDocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building with MkDocs
   </span>
   
 
@@ -786,6 +866,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-mkdocsyml-file" class="md-nav__link">
+    The mkdocs.yml file
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -802,170 +897,124 @@
   
 
 
-  <h1>Create content using Visual Studio Code</h1>
+  <h1>The mkdocs file</h1>
 
-<div><p>You are ready to start creating content.  For this example we will keep it real simple.</p>
+<div><p>You are ready to start creating content. The structure of a published MkDocs repository is controlled by the <strong>mkdocs.yml</strong> file. </p>
+<div class="admonition important">
+<p class="admonition-title">Do you know YAML?</p>
+<p>If you are not familiar with Yet Another Markup Language (YAML), that is OK. You can learn more by doing google searches if you want. But one very critical things... YAML has very strict formatting rules. Incorrect use of quotes, colons, and dashes or not lining sections up will result in errors.</p>
+</div>
+<h2 id="the-mkdocsyml-file">The mkdocs.yml file</h2>
+<p>For this example we will keep it real simple. The <strong>mkdocs.yml</strong> file that is created with the <strong>mkdocs new</strong> command in the previous chapter is very basic. If you are creating a new L3, I suggest copying the <strong>mkdocs.yml</strong> from an existing IBM Cloud level 3 course and modifying it. This is what was done for the SalesEnablement-L3-test-repo2 repository.</p>
+<p>You should spend some time studying the file and its structure. The sections used in the IBM Cloud L3s are described at a high level below. The samples given are based on the SalesEnablement-L3-test-repo2 repository when I initially created it. Others may have modified since, so what you see now in the repository may differ.</p>
 <ol>
-<li>Open Visual Code Studio.</li>
-<li>Click <strong>File</strong> and then <strong>Open Folder</strong></li>
-<li>Select your IBM GitHub clone directory (e.g. <strong>~/Documents/MKDOCS/SalesEnablement-L3-Guidance</strong>).</li>
-<li>
-<p>The folder will appear in the left hand navigation.  If you expand it, you will see the <strong>mkdocs.yml</strong> file and <strong>docs</strong> directory.</p>
-</li>
-<li>
-<p>At this point, you need to read the MkDocs user's guide for how to create content and update your <strong>mkdocs.yml</strong> file.  You can use <a href="https://github.com/IBM/SalesEnablement-L3-Guidance" target="_blank">repository</a> as an example.</p>
-</li>
+<li>In VSC, click the <strong>mkdocs.yml</strong> file in the *<em>EXPLORER</em> view.</li>
 </ol>
 <p>As you modify your <strong>mkdocs.yml</strong> file and add content in your <strong>docs</strong> directory, you will notice on the left hand side of <strong>Visual Code Studio</strong> that a count of the <strong>Unstaged Changes</strong> appear on the <strong>Source Control</strong> icon.  </p>
-<ol start="6">
-<li>When you are ready, you can commit the changes to your IBM GitHub repository by entering a <strong>commit message</strong> and clicking the <strong>Commit</strong> button and then sync the changes by clicking <strong>Sync Changes</strong>.</li>
+<p>While listed as steps below, you don't have to do anything here, but you should go through each step and learn about the different sections used by other IBM Cloud L3s. There are many other configurations that could be specified, but using these will keep things consistent with other IBM Cloud L3s.</p>
+<ol start="2">
+<li><strong>Project info</strong></li>
 </ol>
-<p>Note: As a best practice you should utilize branches, pull requests, etc. in <strong>GitHub</strong>. </p>
-<p>Here is an example mkdocs.yml file for the material theme:</p>
+<p>This section has general information about the project and who created it, etc. </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># Project info
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>site_name: IBM Power Virtual Server Level 3 Demonstration Guide
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>site_description: IBM Power Virtual Server Sales Enablement Level 3 Demonstration Guide
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>site_name: IBM Cloud Sample Level 3 
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>site_description: IBM Cloud Sample Level 3 
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>site_author: Andrew R. Jones (andrewj@us.ibm.com)
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>copyright: Copyright &amp;copy; 2022 IBM
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a># Repository
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>repo_name: IBM/SalesEnablement-test-repo
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>#repo_url: https://github.com/IBM/SalesEnablement-PowerVS-L3
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>#edit_uri: edit/master/docs
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>docs_dir: docs
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>nav:
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  - Introduction: 'index.md'
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  - Part 1 - Overview:
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    - 'Introduction': 'Part 1/01 Introduction.md'
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    - 'Reserve the environment': 'Part 1/02 Reserve.md'
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>  - Part 2 - Provisioning a PowerVS workspace:
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    - 'Introduction': 'Part 2/01 Introduction.md'
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    # - 'Watch a service being provisioned': 'Part 2/02 Watch-service.md'
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    - 'Click through demonstration of a workspace being provisioned': 'Part 2/03 Clickthru-service.md'
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>  - Part 3 - Provisioning a PowerVS instance:
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    - 'Introduction': 'Part 3/01 Introduction.md'
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    # - 'Watch a instance being provisioned': 'Part 3/02 Watch-instance.md'
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    - 'Click through provisioning demonstration - AIX': 'Part 3/03 Clickthru-AIXvsi.md'
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    - 'Click through provisioning demonstration - Linux': 'Part 3/04 Clickthru-Linuxvsi.md'
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    - 'Click through provisioning demonstration - IBM i': 'Part 3/05 Clickthru-IBMivsi.md'
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>  - Part 4 - Managing PowerVS instances:
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>    - 'Introduction': 'Part 4/01 Introduction.md'
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>    - 'Managing instances': 'Part 4/02 Explore-managing-instances.md'
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>  - Part 5 - Accessing PowerVS instances:
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    - 'Introduction': 'Part 5/01 Introduction.md'
-<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    - 'Access an instance': 'Part 5/02 Access-instance.md'
-<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>  - Part 6 - Explore other PowerVS topics:
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    - 'Introduction': 'Part 6/01 Introduction.md'
-<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    - 'Virtual appliances': 'Part 6/02 VirtualAppliances.md'
-<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    - 'Shared processor pools': 'Part 6/03 SPPsAndServerPlacementGroups.md'
-<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    - 'SSH keys': 'Part 6/04 SSHKeys.md'
-<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>    - 'Boot images': 'Part 6/05 BootImages.md'
-<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>    - 'Networking': 'Part 6/06 Networking.md'
-<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>    - 'Storage volumes': 'Part 6/07 StorageVolumes.md'
-<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    - 'Event logs': 'Part 6/08 EventLogs.md'
-<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>    - 'Additional products and services': 'Part 6/09 AdditionalServices.md'
-<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>  - Part 7 - Use the PowerVS command line interfaces (CLI):
-<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>    - 'Introduction': 'Part 7/01 Introduction.md'
-<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>    - 'Command line exercises': 'Part 7/02 CLIs.md'
-<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>  - Part 8 - Observing PowerVS resources:
-<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>    - 'Introduction': 'Part 8/01 Introduction.md'
-<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>    - 'IBM Cloud Monitoring': 'Part 8/02 IBM Cloud Monitoring.md'
-<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>    - 'IBM Activity Tracker': 'Part 8/03 IBM Cloud Activity Tracker.md'
-<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>  - Part 9 - New features:
-<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>    - 'Introduction': 'Part 9/01 Introduction.md'
-<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>    - 'Dedicated hosts': 'Part 9/02 Dedicated hosts.md'
-<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>    - 'Deployable architectures': 'Part 9/03 Deployable architectures.md'
-<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>  - Part 10 - Next steps:
-<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>    - 'Next steps': 'Part 10/01 Next steps.md'
-<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>
-<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>theme:
-<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>  name: material
-<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>  features:
-<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>    - navigation.instant
-<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>    - navigation.tracking
-<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>    - content.code.annotate
-<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>    - content.code.copy
-<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>  palette:
-<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>    - media: "(prefers-color-scheme: light)"
-<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>      scheme: default
-<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>      toggle:
-<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>        icon: material/toggle-switch-off-outline
-<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>        name: Switch to dark mode
-<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>    - media: "(prefers-color-scheme: dark)"
-<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a>      scheme: slate
-<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a>      toggle:
-<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a>        icon: material/toggle-switch
-<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a>        name: Switch to light mode
-<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a>
-<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>plugins:
-<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>    - mkdocs-video
-<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a>    - macros
-<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a>    - search
-<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a>
-<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a>markdown_extensions:
-<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>  - sane_lists
-<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>  - pymdownx.details
-<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>  - admonition
-<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a>  - pymdownx.highlight:
-<a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a>      anchor_linenums: true
-<a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a>  - pymdownx.inlinehilite
-<a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a>  - pymdownx.snippets
-<a id="__codelineno-0-91" name="__codelineno-0-91" href="#__codelineno-0-91"></a>  - pymdownx.superfences
-<a id="__codelineno-0-92" name="__codelineno-0-92" href="#__codelineno-0-92"></a>  - pymdownx.keys
-<a id="__codelineno-0-93" name="__codelineno-0-93" href="#__codelineno-0-93"></a>  - attr_list
-<a id="__codelineno-0-94" name="__codelineno-0-94" href="#__codelineno-0-94"></a>  - md_in_html
-<a id="__codelineno-0-95" name="__codelineno-0-95" href="#__codelineno-0-95"></a>
-<a id="__codelineno-0-96" name="__codelineno-0-96" href="#__codelineno-0-96"></a>extra:
-<a id="__codelineno-0-97" name="__codelineno-0-97" href="#__codelineno-0-97"></a>  generator: false
-<a id="__codelineno-0-98" name="__codelineno-0-98" href="#__codelineno-0-98"></a>  supportEmail: "andrewj@us.ibm.com"
-<a id="__codelineno-0-99" name="__codelineno-0-99" href="#__codelineno-0-99"></a>  supportSlack: 
-<a id="__codelineno-0-100" name="__codelineno-0-100" href="#__codelineno-0-100"></a>    name: "#cloud-platform-demo-feedback"
-<a id="__codelineno-0-101" name="__codelineno-0-101" href="#__codelineno-0-101"></a>    url: "https://ibm-technology-sales.slack.com/archives/C03PQ47KRQE"
-<a id="__codelineno-0-102" name="__codelineno-0-102" href="#__codelineno-0-102"></a>  learningplan:
-<a id="__codelineno-0-103" name="__codelineno-0-103" href="#__codelineno-0-103"></a>    name: "IBM Power Virtual Server for Technical Sales - Level 3"
-<a id="__codelineno-0-104" name="__codelineno-0-104" href="#__codelineno-0-104"></a>    url: "https://yourlearning.ibm.com/activity/PLAN-7D757C8B58E7"
-<a id="__codelineno-0-105" name="__codelineno-0-105" href="#__codelineno-0-105"></a>  offering:
-<a id="__codelineno-0-106" name="__codelineno-0-106" href="#__codelineno-0-106"></a>    name: "IBM Power Virtual Server"
-<a id="__codelineno-0-107" name="__codelineno-0-107" href="#__codelineno-0-107"></a>  guide:
-<a id="__codelineno-0-108" name="__codelineno-0-108" href="#__codelineno-0-108"></a>    name: "IBM Power Virtual Server - Level 3 Demonstration Guide"
-<a id="__codelineno-0-109" name="__codelineno-0-109" href="#__codelineno-0-109"></a>    url: "https://ibm.github.io/SalesEnablement-PowerVS-L3/"
-<a id="__codelineno-0-110" name="__codelineno-0-110" href="#__codelineno-0-110"></a>  tz_environment:
-<a id="__codelineno-0-111" name="__codelineno-0-111" href="#__codelineno-0-111"></a>    name: "IBM Power Virtual Server - Sales Enablment L3"
-<a id="__codelineno-0-112" name="__codelineno-0-112" href="#__codelineno-0-112"></a>    url: "https://techzone.ibm.com/my/reservations"
-<a id="__codelineno-0-113" name="__codelineno-0-113" href="#__codelineno-0-113"></a>  account: "2305900 - ITZ - ADHOC03"
-<a id="__codelineno-0-114" name="__codelineno-0-114" href="#__codelineno-0-114"></a>  powerVS:
-<a id="__codelineno-0-115" name="__codelineno-0-115" href="#__codelineno-0-115"></a>    serviceInstanceName: "PowerVS-L3-2024"
-<a id="__codelineno-0-116" name="__codelineno-0-116" href="#__codelineno-0-116"></a>    serviceInstanceRG: "PowerVS-L3"
-<a id="__codelineno-0-117" name="__codelineno-0-117" href="#__codelineno-0-117"></a>    serviceInstanceLocation: "WDC07"
-<a id="__codelineno-0-118" name="__codelineno-0-118" href="#__codelineno-0-118"></a>    placementGroup1: "GroupTogether"
-<a id="__codelineno-0-119" name="__codelineno-0-119" href="#__codelineno-0-119"></a>    placementGroup2: "GroupApart"
-<a id="__codelineno-0-120" name="__codelineno-0-120" href="#__codelineno-0-120"></a>    sshKey: "PowerVS-key"
-<a id="__codelineno-0-121" name="__codelineno-0-121" href="#__codelineno-0-121"></a>    privateSubnet: "private-powervs-2024"
-<a id="__codelineno-0-122" name="__codelineno-0-122" href="#__codelineno-0-122"></a>    privateSubnetCIDR: "192.168.100.0/24"
-<a id="__codelineno-0-123" name="__codelineno-0-123" href="#__codelineno-0-123"></a>    privateSubnetGW: "192.168.100.15"
-<a id="__codelineno-0-124" name="__codelineno-0-124" href="#__codelineno-0-124"></a>    privateSubnetDNS: "127.0.0.1"
-<a id="__codelineno-0-125" name="__codelineno-0-125" href="#__codelineno-0-125"></a>    publicSubnet: "public-192_168_222_192-29-VLAN_2056
-<a id="__codelineno-0-126" name="__codelineno-0-126" href="#__codelineno-0-126"></a>"
-<a id="__codelineno-0-127" name="__codelineno-0-127" href="#__codelineno-0-127"></a>    monitoringInstance: "PowerVS-L3-Monitoring"
-<a id="__codelineno-0-128" name="__codelineno-0-128" href="#__codelineno-0-128"></a>    atInstance: "AT-PowerVS-L3"
-<a id="__codelineno-0-129" name="__codelineno-0-129" href="#__codelineno-0-129"></a>  aixServer1:
-<a id="__codelineno-0-130" name="__codelineno-0-130" href="#__codelineno-0-130"></a>    name: "AIX-VM"
-<a id="__codelineno-0-131" name="__codelineno-0-131" href="#__codelineno-0-131"></a>    privateIP: "192.168.100.112"
-<a id="__codelineno-0-132" name="__codelineno-0-132" href="#__codelineno-0-132"></a>    publicIP: "150.239.207.227"
-<a id="__codelineno-0-133" name="__codelineno-0-133" href="#__codelineno-0-133"></a>    additionalVolumeName: "aix-av1"
-<a id="__codelineno-0-134" name="__codelineno-0-134" href="#__codelineno-0-134"></a>  linuxServer1:
-<a id="__codelineno-0-135" name="__codelineno-0-135" href="#__codelineno-0-135"></a>    name: "Linux-VM"
-<a id="__codelineno-0-136" name="__codelineno-0-136" href="#__codelineno-0-136"></a>    privateIP: "192.168.100.173"
-<a id="__codelineno-0-137" name="__codelineno-0-137" href="#__codelineno-0-137"></a>    publicIP: "150.239.207.226"
-<a id="__codelineno-0-138" name="__codelineno-0-138" href="#__codelineno-0-138"></a>    additionalVolumeName: "linux-av1"
-<a id="__codelineno-0-139" name="__codelineno-0-139" href="#__codelineno-0-139"></a>  ibmiServer1:
-<a id="__codelineno-0-140" name="__codelineno-0-140" href="#__codelineno-0-140"></a>    name: "IBMi-VM"
-<a id="__codelineno-0-141" name="__codelineno-0-141" href="#__codelineno-0-141"></a>    privateIP: "192.168.100.157"
-<a id="__codelineno-0-142" name="__codelineno-0-142" href="#__codelineno-0-142"></a>    publicIP: "150.239.207.228"
-<a id="__codelineno-0-143" name="__codelineno-0-143" href="#__codelineno-0-143"></a>    additionalVolumeName: "ibmi-av1"
-</code></pre></div></div>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>copyright: Copyright &amp;copy; 2024 IBM
+</code></pre></div>
+<ul>
+<li><strong>site_name</strong>: shown as the title on the published pages</li>
+<li><strong>site_description</strong>: not sure if this is used anywhere</li>
+<li><strong>site_author</strong>: not sure if this is used anywhere</li>
+<li><strong>copyright</strong>: shown at the bottom of the published pages</li>
+</ul>
+<ol start="3">
+<li><strong>Repository</strong></li>
+</ol>
+<p>This section specifies what GitHub repository is used for the content.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># Repository
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>repo_name: IBM/SalesEnablement-test-repo2
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>#repo_url: https://github.com/IBM/SalesEnablement-L3-test-repo2
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>#edit_uri: edit/master/docs
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>docs_dir: docs
+</code></pre></div>
+<ul>
+<li><strong>repo_name</strong>: the name of the GitHub repository</li>
+<li><strong>repo_url</strong>: URL of the repo </li>
+<li><strong>edit_uri</strong>: not sure how this is used</li>
+<li><strong>docs_dir</strong>: used to specify subdirectory for all markdown content</li>
+</ul>
+<p>I typically comment out (#) the <strong>repo_url</strong> and <strong>edit_uri</strong>. If you don't, then links to the GitHub repository will appear on the published pages. We may do this in the future to allow users to directly open issues in GitHub.</p>
+<p><img alt="" src="../_attachments/VSI-repoURLs.png"></p>
+<ol start="4">
+<li><strong>theme</strong></li>
+</ol>
+<p>The <strong>theme</strong> sections specifies what MkDocs theme to use and attributes for the theme. Recall we installed the <strong>material</strong> theme. There are others, but thus far we have standardized IBM Cloud L3s with the <strong>material</strong> theme. There are also many other attributes that could be specified, but these will suffice for now. You can try changing these and viewing the results, but again, would suggesting keeping these values for consistency with the other L3s.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>theme:
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  name: material
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  features:
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    - navigation.instant
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    - navigation.tracking
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    - content.code.annotate
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    - content.code.copy
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  palette:
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    - media: "(prefers-color-scheme: light)"
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>      scheme: default
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>      toggle:
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        icon: material/toggle-switch-off-outline
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        name: Switch to dark mode
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    - media: "(prefers-color-scheme: dark)"
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>      scheme: slate
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>      toggle:
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        icon: material/toggle-switch
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        name: Switch to light mode
+</code></pre></div>
+<ol start="5">
+<li><strong>plugins</strong></li>
+</ol>
+<p>The <strong>plugins</strong> sections tells the build process what plugins are used by the content. We installed these plugins already. </p>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>plugins:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    - mkdocs-video
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    - macros
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    - search
+</code></pre></div>
+6. <strong>markdown_extensions</strong>
+<p>The <strong>markdown_extensions</strong> also control the look and feel of the published pages.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>markdown_extensions:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  - sane_lists
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  - pymdownx.details
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  - admonition
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  - pymdownx.highlight:
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>      anchor_linenums: true
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  - pymdownx.inlinehilite
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  - pymdownx.snippets
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>  - pymdownx.superfences
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>  - pymdownx.keys
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>  - attr_list
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  - md_in_html
+</code></pre></div>
+<ol start="7">
+<li><strong>nav</strong></li>
+</ol>
+<p>The <strong>nav</strong> (short for navigation) section defines the table of content for the published pages and specifies where the content comes from (file names).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nav:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  - Introduction: 'index.md'
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  - Part 1 - Overview:
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    - 'Introduction': 'Part 1/01 Introduction.md'
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    - 'Reserve the environment': 'Part 1/02 Reserve.md'
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>  - Part 2 - Provisioning a PowerVS workspace:
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    - 'Introduction': 'Part 2/01 Introduction.md'
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    - 'Click through demonstration of a workspace being provisioned': 'Part 2/03 Clickthru-service.md'
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>  - Part 3 - Next steps:
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    - 'Next steps': 'Part 3/01 Next steps.md'
+</code></pre></div>
+<p>The above structure is what I've used in the other IBM Cloud L3s. Using the directory structure and file naming convention keeps the VSC EXPLORER view consistent with the table of contents.</p>
+<ol start="7">
+<li><strong>extra</strong></li>
+</ol>
+<p>Think of the <strong>extra</strong> section as where you can define global variables to be used in your content. Instead of typing the same name in 10 different markdown files, just specify it once here and then reference it in the 10 files using the {{variable}} notation. You will see this in action when we start editing markdown.</p>
+<p>I don't recall what the <strong>generator: false</strong> extra does.</p>
+<p>Again, lots of other things could go in the mkdocs.yml file, but this is what you need to know to work with the existing IBM Cloud L3s.</p></div>
 
 
 

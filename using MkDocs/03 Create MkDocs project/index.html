@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../02%20Clone%20your%20git%20repository/">
+        <link rel="prev" href="../02%20Clone%20the%20repository/">
       
       
-        <link rel="next" href="../04%20Create%20content%20using%20Visual%20Studio%20Code/">
+        <link rel="next" href="../04%20The%20mkdocs%20file/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -77,6 +77,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#initializing-a-new-repository-for-mkdocs" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -533,11 +538,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../02%20Clone%20your%20git%20repository/" class="md-nav__link">
+      <a href="../02%20Clone%20the%20repository/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Clone your git repository
+    Clone the repository
   </span>
   
 
@@ -560,6 +565,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Create MkDocs project
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -569,6 +585,30 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#initializing-a-new-repository-for-mkdocs" class="md-nav__link">
+    Initializing a new repository for MkDocs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -581,11 +621,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../04%20Create%20content%20using%20Visual%20Studio%20Code/" class="md-nav__link">
+      <a href="../04%20The%20mkdocs%20file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Create content using Visual Studio Code
+    The mkdocs file
   </span>
   
 
@@ -601,11 +641,51 @@
   
   
     <li class="md-nav__item">
-      <a href="../05%20Doing%20your%20first%20MkDocs%20gh-deploy/" class="md-nav__link">
+      <a href="../05%20Creating%20content/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Doing your first MkDocs gh-deploy
+    Creating content
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20Committing%20to%20GitHub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Committing to GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07%20Building%20with%20MkDocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building with MkDocs
   </span>
   
 
@@ -786,6 +866,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#initializing-a-new-repository-for-mkdocs" class="md-nav__link">
+    Initializing a new repository for MkDocs
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -804,39 +899,27 @@
 
   <h1>Create MkDocs project</h1>
 
-<div><p>To start using MkDocs, you need to initialize your project folder. These steps can be performed in the Visual Code Studio <strong>terminal</strong> as well or via the GUI when opening a new widow.</p>
+<div><p>Now that you have a clone of the repository, next you need to initialize MkDocs for the repository. <strong>These steps only need to be completed if you are creating a new L3 and working with a brand new repository. If you are modifying an existing L3 or playing with the test repository, you will not need to do these steps.</strong></p>
+<h2 id="initializing-a-new-repository-for-mkdocs">Initializing a new repository for MkDocs</h2>
 <ol>
-<li>Open a <strong>terminal</strong>.</li>
-<li>Change directory to the parent directory of your IBM GitHub repository clone.</li>
+<li>Open a <strong>terminal</strong> in VSC.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cd ~/MKDOCS
+<p><img alt="" src="../_attachments/VSC-newTerminal.png"></p>
+<p>You can resize the terminal window by grabbing the frame bar between the welcome screen and the terminal. Notice the terminal opens with the path set to the directory that was created for your clone repository.</p>
+<ol start="2">
+<li>Run the <strong>mkdocs new</strong> command specifying the current directory (.) for the name.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdocs new .
 </code></pre></div>
+<p><img alt="" src="../_attachments/VSC-mkdocsNew.png"></p>
+<p>Notice 2 new files and the <strong>docs</strong> directory are created.</p>
 <ol start="3">
-<li>Run the <strong>mkdocs new</strong> command:</li>
+<li>In the VCS terminal, create a <strong>.gitignore</strong> file to ignore file. </li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdocs new SalesEnablement-L3-guidance
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>echo "site/" &gt;&gt; .gitignore
 </code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>INFO     -  Writing config file: SalesEnablement-L3-Guidance/mkdocs.yml
-INFO     -  Writing initial docs: SalesEnablement-L3-Guidance/docs/index.md</p>
-</div>
-<ol start="4">
-<li>Verify there is now a <strong>mkdocs.yml</strong> file and a <strong>docs</strong> directory.</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cd SalesEnablement-L3-Guidance
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ls
-</code></pre></div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>LICENSE       README.md      docs    mkdocs.yml</p>
-</div>
-<p>The LICENSE and README.md came from the clone of the repository and the mkdocs.yml file and docs directory were created by MkDocs.</p>
-<ol start="5">
-<li>In your project directory, create a <strong>.gitignore</strong> file to ignore the MkDocs build files that don't need to be pushed to your repository.</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>echo "site/" &gt;&gt; .gitignore
-</code></pre></div></div>
+<p>The .gitignore is used to exclude certain files or directories from being pushed up to the GitHub repository. The above command created the file and populated with the <strong>site</strong> directory. The <strong>site</strong> directory will contain build files that MkDocs generates. These files do not need to be pushed up to GitHub.</p>
+<p><img alt="" src="_attachments/VCS-gitignore.png.png"></p></div>
 
 
 
