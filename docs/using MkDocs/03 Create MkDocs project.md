@@ -26,5 +26,5 @@ echo "site/" >> .gitignore
 
 The .gitignore is used to exclude certain files or directories from being pushed up to the GitHub repository. The above command created the file and populated with the **site** directory. The **site** directory will contain build files that MkDocs generates. These files do not need to be pushed up to GitHub.
 
-![](_attachments/VCS-gitignore.png.png)
+![](_attachments/VCS-gitignore.png)
 
