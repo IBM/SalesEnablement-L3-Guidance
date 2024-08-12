@@ -23,4 +23,4 @@ Install the following VSC extensions. This is done using VSC, but you can also e
 
 Here is a short video that shows how to install an extension in VSC:
 
-![](_attachments/GitHubInstallExtension-final.mp4)
+![type:video](_attachments/GitHubInstallExtension-final.mp4)
