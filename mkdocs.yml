@@ -10,8 +10,8 @@ docs_dir: docs
 repo_url: https://github.com/IBM/SalesEnablement-L3-Guidance
 edit_uri: edit/master/docs
 
-
 nav:
+  - Introduction: 'index.md'
   - Part 1 - Setting up your machine:
     - 'Introduction': 'machine-setup/01 Introduction.md'
     - 'Install github desktop': 'machine-setup/02 Install git.md'
