@@ -21,6 +21,6 @@ Install the following VSC extensions. This is done using VSC, but you can also e
 - Markdown Preview Enhanced
 - YAML
 
-Here is a short video that shows how to install an extension in VSC:
+Here is a short video (no audio) that shows how to install an extension in VSC:
 
 ![type:video](_attachments/GitHubInstallExtension-final.mp4)
