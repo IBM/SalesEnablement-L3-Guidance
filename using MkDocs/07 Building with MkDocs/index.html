@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-syntax-error" class="md-skip">
+        <a href="#troubleshooting-tips-for-mkdocs-gh-deploy" class="md-skip">
           Skip to content
         </a>
       
@@ -644,8 +644,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Building with MkDocs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -656,6 +665,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-tips-for-mkdocs-gh-deploy" class="md-nav__link">
+    Troubleshooting tips for mkdocs gh-deploy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-the-action-status-in-github" class="md-nav__link">
+    View the action status in GitHub
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -832,8 +872,28 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-tips-for-mkdocs-gh-deploy" class="md-nav__link">
+    Troubleshooting tips for mkdocs gh-deploy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-the-action-status-in-github" class="md-nav__link">
+    View the action status in GitHub
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -851,11 +911,64 @@
   
 
 
-<div><h1 id="macro-syntax-error"><em>Macro Syntax Error</em></h1>
-<p><em>File</em>: <code>using MkDocs/07 Building with MkDocs.md</code></p>
-<p><em>Line 33 in Markdown file:</em> <strong>expected token 'end of print statement', got 'such'</strong>
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">-</span><span class="w"> </span><span class="gs">**{{ no such element: dict object['name'] }}**</span>: if you attempt to reference an <span class="gs">**extra**</span> variable from your <span class="gs">**mkdocs.yml**</span> file that doesn't exist, you will see text like this in the published document.
-</code></pre></div></div>
+  <h1>Building with MkDocs</h1>
+
+<div><p>Once these changes are commited, to do the build with MkDocs, follow these steps.</p>
+<ol>
+<li>
+<p>If not already open, open a <strong>terminal</strong> in Visual Code Studio.</p>
+<p><img alt="" src="../_attachments/VSC-newTerminal.png"></p>
+</li>
+<li>
+<p>Run <strong>mkdocs gh-deploy</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdocs gh-deploy
+</code></pre></div>
+<p><img alt="" src="../_attachments/VCS-mkdocs-ghdeploy.png"></p>
+</li>
+</ol>
+<p>If all works properly, as the last line of the output shows, your published pages will be available in a <em>few minutes</em> at the URL specified. In the case of <strong>SalesEnablement-L3-test-repo2</strong> the output is published to <a href="https://IBM.github.io/SalesEnablement-L3-test-repo2/" target="_blank">https://IBM.github.io/SalesEnablement-L3-test-repo2/</a>.</p>
+<p>The <em>few minutes</em> is for the time for the GitHub action to run that finalizes the build and pushes the MkDocs generated HTML to be published to github.io. This is usually pretty quick, but if you do several builds of the same content within a few minutes of each other, the GitHub action requests will get throttled and start to take longer.</p>
+<h3 id="troubleshooting-tips-for-mkdocs-gh-deploy">Troubleshooting tips for <em>mkdocs gh-deploy</em></h3>
+<p>Here are few common messages you may see when <em>mkdocs gh-deploy</em> runs. Warnings can usually be ignored, but should probably be addressed.  Errors will need to be resolved before the build will succeed.</p>
+<ul>
+<li>
+<p><strong>WARNING -  Version check skipped: No version specified in previous deployment.</strong>: this typically occurs only the first time you run <em>mkdocs gh-deploy</em> on a new clone. </p>
+</li>
+<li>
+<p><strong>WARNING -  Doc file 'Part 1/02 Reserve.md' contains a relative link '_attachments/ITZ-1XXXX.png', but the target 'Part 1/_attachments/ITZ-1XXXX.png' is not found among documentation files.</strong>: probably should be more than a warning, as this will result in a missing image.</p>
+</li>
+<li>
+<p><strong>ERROR   -  Error reading page 'Part 1/Page not used.md': Document is empty</strong>: message is self explanatory. Not sure why it is an error, but the build won't proceed until each file has content.</p>
+</li>
+<li>
+<p><strong>INFO    -  The following pages exist in the docs directory, but are not included in the "nav" configuration: - Part 1/Page not used.md</strong>: message is self explanatory.</p>
+</li>
+</ul>
+<p>Unfortunately, just because the build doesn't show any errors doesn't mean your content is perfect. A few common things you may see in the generated output:</p>
+<ul>
+<li>
+<p><strong>no such element: dict object['name']</strong>: if you attempt to reference an <strong>extra</strong> variable from your <strong>mkdocs.yml</strong> file that doesn't exist, you will see text like this in the published document.</p>
+<p><img alt="" src="../_attachments/Output-badVar.png"></p>
+</li>
+</ul>
+<h3 id="view-the-action-status-in-github">View the action status in GitHub</h3>
+<ol start="3">
+<li>
+<p>Open a browser window to the GitHub repository: <a href="https://github.com/IBM/SalesEnablement-L3-test-repo2" target="_blank">https://github.com/IBM/SalesEnablement-L3-test-repo2</a>.</p>
+</li>
+<li>
+<p>Click <strong>Actions</strong>.</p>
+<p><img alt="" src="../_attachments/GH-sourceRepoMain.png"></p>
+</li>
+<li>
+<p>Click the top most <strong>pages build and deployment</strong> link.</p>
+<p>Note, the status may still show "building".</p>
+<p><img alt="" src="../_attachments/GH-actions.png"></p>
+</li>
+</ol>
+<p>The deployment shows all the steps of the build process. Feel free to explore the information provided. The link the the deployed content is also available.</p>
+<p><img alt="" src="../_attachments/GH-actionComplete.png"></p>
+<p>Information provided on the above pages may be helpful in debugging issues.</p></div>
 
 
 
