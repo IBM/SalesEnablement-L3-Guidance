@@ -30,7 +30,7 @@ Here are few common messages you may see when *mkdocs gh-deploy* runs. Warnings 
 
 Unfortunately, just because the build doesn't show any errors doesn't mean your content is perfect. A few common things you may see in the generated output:
 
-- **{{ no such element: dict object['name'] }}**: if you attempt to reference an **extra** variable from your **mkdocs.yml** file that doesn't exist, you will see text like this in the published document.
+- **no such element: dict object['name']**: if you attempt to reference an **extra** variable from your **mkdocs.yml** file that doesn't exist, you will see text like this in the published document.
 
     ![](_attachments/Output-badVar.png)
 
