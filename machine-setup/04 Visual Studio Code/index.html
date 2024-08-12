@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#install-vsc" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -354,6 +359,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Visual Studio Code
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -363,6 +379,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-vsc" class="md-nav__link">
+    Install VSC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-vsc-extensions" class="md-nav__link">
+    Install VSC extensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrate-git-and-vsc" class="md-nav__link">
+    Integrate git and VSC
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -826,6 +880,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-vsc" class="md-nav__link">
+    Install VSC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-vsc-extensions" class="md-nav__link">
+    Install VSC extensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrate-git-and-vsc" class="md-nav__link">
+    Integrate git and VSC
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -844,11 +927,21 @@
 
   <h1>Visual Studio Code</h1>
 
-<div><p>Using the IBM app store for your operating system, install Visual Code Studio (VSC). </p>
+<div><p>Three main tasks here: 
+- install Visual Code Studio (VSC)
+- install some extensions to VSC
+- configure git and VSC</p>
+<h2 id="install-vsc">Install VSC</h2>
+<p>Using the IBM app store for your operating system, install Visual Code Studio (VSC). </p>
 <p>Mac@IBM application</p>
 <p><a href="https://w3.ibm.com/download/standardsoftware/PC/lang_en/issiCatalogPC.html" target="_blank">IBM Windows App Store</a></p>
 <p><img alt="" src="../_attachments/VSC.png"></p>
 <p>More information about VSC can be found <a href="https://code.visualstudio.com/" target="_blank">here</a>.</p>
+<ul>
+<li>install some extensions to VSC</li>
+<li>configure git and VSC</li>
+</ul>
+<h2 id="install-vsc-extensions">Install VSC extensions</h2>
 <p>Install the following VSC extensions. This is done using VSC, but you can also explore the <a href="https://marketplace.visualstudio.com/" target="_blank">VSC catalog</a>. To learn more about extensions go <a href="https://code.visualstudio.com/docs/editor/extension-marketplace" target="_blank">here</a>. </p>
 <ul>
 <li>Acrolinx</li>
@@ -858,12 +951,22 @@
 <li>GitHub Repositories</li>
 <li>Hashicorp Terraform</li>
 <li>Markdown All in One</li>
-<li>Markdown Preview</li>
 <li>Markdown Preview Enhanced</li>
 <li>YAML</li>
 </ul>
 <p>Here is a short video (no audio) that shows how to install an extension in VSC:</p>
-<p><div class="video-container"><iframe src="../_attachments/GitHubInstallExtension-final.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p></div>
+<p><div class="video-container"><iframe src="../_attachments/GitHubInstallExtension-final.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<h2 id="integrate-git-and-vsc">Integrate git and VSC</h2>
+<ol>
+<li>Open <strong>VSC</strong> if not already opened.</li>
+<li>Open a <strong>terminal</strong> in VSC.</li>
+</ol>
+<p><img alt="" src="../../using%20MkDocs/_attachments/VSC-newTerminal.png"></p>
+<ol start="3">
+<li>In the <strong>terminal</strong>, run the following commands, replacing <strong><em>YOURGITID</em></strong> and <strong><em>YOUR_EMAIL</em></strong> with your appropriate ID and email address.</li>
+</ol>
+<p>git config --global user.name YOUR_GITID
+git config --global user.email YOUR_EMAIL</p></div>
 
 
 
