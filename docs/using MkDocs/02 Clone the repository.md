@@ -4,15 +4,25 @@ We will be using Visual Code Studio (VSC) to do most your work, however, there w
 
 You can use the new repository you created earlier if you are creating a new course, use and existing L3 repository, or you can play with this test repository: <a href="https://github.com/IBM/SalesEnablement-L3-test-repo2" target="_blank">https://github.com/IBM/SalesEnablement-L3-test-repo2</a>.
 
+!!! Warning "Using SSH to clone"
+
+    It is best to use SSH to clone and synchronize things to GitHub, however it is not required for the repositories we are using. In the future, if you need to work with repositories in github.ibm.com, you will need to enable SSH. You can learn how to do this <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account" target="_blank">here</a>.
+
+
 1. Open the repository in your browser.
+
+    <a href="https://github.com/IBM/SalesEnablement-L3-test-repo2" target="_blank">https://github.com/IBM/SalesEnablement-L3-test-repo2</a>
+
 2. Click the green **Code** drop down.
-3. Click the **SSH** tab under **Clone**. 
-4. Copy the SSH clone link.
+3. Click the **HTTP** tab under **Clone**. 
+4. Copy the HTTP clone link.
+
+   !!! Note "image below uses SSH being selected."
 
 ![](_attachments/GetCloneLink.png)
 
-5. Open VSC.
-6. At the VSC welcome screen, click **Clone Git Repository**.
+1. Open VSC.
+2. At the VSC welcome screen, click **Clone Git Repository**.
 
 ![](_attachments/VSC-Welcome.png)
 

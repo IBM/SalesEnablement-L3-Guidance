@@ -1,4 +1,6 @@
-**If you are just going to be updating a existing L3, you don't need to do the following steps.**
+!!! Warning
+
+    **These steps only need to be completed if you are creating a new L3 and working with a brand new repository. If you are modifying an existing L3 or playing with the test repository, you will not need to do these steps.**
 
 You need to configure GitHub Pages to work with MkDocs.  In theory, you should follow good source code repository practices and use at least a development and main branches, use pull requests, and properly review changes. Refer to the GitHub documentation for more information.
 

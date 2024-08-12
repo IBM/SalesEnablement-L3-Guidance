@@ -3,7 +3,11 @@ This repository provides guidance for creating IBM Cloud Sales Enablement L3 Lea
 
 The content provided here is based upon my personal experience in creating our first IBM Cloud platform Level 3 learning plan: (<a href="https://yourlearning.ibm.com/activity/PLAN-7D757C8B58E7" target="_blank">IBM Cloud Satellite</a>).
 
-Some of the content here is based upon the work Jeff Goodhue et al. did related to L3 creation for Sales Enablement.
+In several chapters you will see a warning message like this:
+
+    **These steps only need to be completed if you are creating a new L3 and working with a brand new repository. If you are modifying an existing L3 or playing with the test repository, you will not need to do these steps.**
+
+You don't have to do these steps unless you are doing a brand new L3; however, I encourage you to read though these pages.
 
 There are 5 parts to this guidance which are accessible in the navigation to the left.
 

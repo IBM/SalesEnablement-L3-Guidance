@@ -1,4 +1,6 @@
-**If you are just going to be updating a existing L3, you don't need to create a new repo.**
+!!! Warning
+
+    **These steps only need to be completed if you are creating a new L3 and working with a brand new repository. If you are modifying an existing L3 or playing with the test repository, you will not need to do these steps.**
 
 The creation of new repositories is automated, simple, and fast. If you are creating a new IBM Cloud L3, all you need to do is follow the steps below. 
 

@@ -24,12 +24,24 @@ Notice below the **Commit** button are all the files that have been modified, ad
 
 Note, you can perform many commits (thus adding more messages and info in GitHub). This doesn't actually push the files up to GitHub, that comes next.
 
+!!! Note "VSC pop-up dialog"
+
+    If you get a dialog stating something like ***There are no staged changes to commit***, click on **Always**  to always sage your changes and commit them directly.
+
 4. Click **Sync Changes**.
 
-![](_attachments/VCS-sync.png)
+    ![](_attachments/VCS-sync.png)
 
-Note, adding a message here is not required, but a good practice.
+    !!! Note "VSC dialog"
 
-This step will vary in duration based on the number and size of the files that are being sent up to the GitHub repository.
+        If you get a dialog stating something like ***This action will pull and  push commits from and to origin/main***, click on **OK, Don't Show Again**.
 
-Once everything is commited and synced, you are now ready to use MkDocs to build the **pretty** version of your markdown content and publish it to GitHub pages.
+    !!! Note "Connect to GitHub dialog"
+
+        The first time you do this, you may get a GitHub sign in dialog. Use the **Sign in with your browser** button and follow the directions provided which should end with you clicking a **Authorize git-ecosystem** button.
+
+    Note, adding a message here is not required, but a good practice.
+
+    This step will vary in duration based on the number and size of the files that are being sent up to the GitHub repository.
+
+Once everything is committed and synced, you are now ready to use MkDocs to build the **pretty** version of your markdown content and publish it to GitHub pages.

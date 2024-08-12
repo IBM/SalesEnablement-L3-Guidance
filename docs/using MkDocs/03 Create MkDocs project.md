@@ -1,4 +1,8 @@
-Now that you have a clone of the repository, next you need to initialize MkDocs for the repository. **These steps only need to be completed if you are creating a new L3 and working with a brand new repository. If you are modifying an existing L3 or playing with the test repository, you will not need to do these steps.**
+!!! Warning
+
+    **These steps only need to be completed if you are creating a new L3 and working with a brand new repository. If you are modifying an existing L3 or playing with the test repository, you will not need to do these steps.**
+    
+Now that you have a clone of the repository, next you need to initialize MkDocs for the repository. 
 
 ## Initializing a new repository for MkDocs
 
