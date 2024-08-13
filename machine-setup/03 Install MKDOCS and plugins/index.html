@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#python" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -353,6 +358,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Install MkDocs and plugins
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -362,6 +378,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    MkDocs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -845,6 +892,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    MkDocs
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -867,8 +936,10 @@
 As an example, the IBM Cloud Satellite L3 is specified in this <a href="https://github.com/IBM/SalesEnablement-Satellite-L3" target="_blank">GitHub repository</a> and the MKDOCS build output can be found <a href="https://ibm.github.io/SalesEnablement-Satellite-L3/" target="_blank">here</a>.</p>
 <p>MkDocs is well documented here: <a href="https://www.mkdocs.org/" target="_blank">https://www.mkdocs.org/</a>.
 You can also do google searches on MkDocs for lots of other useful content and primers. </p>
-<p>The steps that follow assume you have <strong>python</strong> already installed. If you do not, you will need to install them first. More specific instructions can be found in the <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">MkDocs Installation guide</a> which includes a link on how to install <a href="https://www.python.org/" target="_blank">Python</a>.</p>
-<p>--- ARJ For windows users, open a dos prompt, and type in python.... the MS App store should pop up, install the latest version of Python from there. </p>
+<h2 id="python">Python</h2>
+<p>The steps that follow assume you have <strong>python</strong> already installed. If you do not, you will need to install it first. </p>
+<p>For MS Windows users, open a command prompt and type in <strong>python</strong>. This should open the MS App store and you can install python from there.</p>
+<p>For Mac users, python may already be installed on your machine.  Open a terminal and type python. If it is not found, instructions can be found in the <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">MkDocs Installation guide</a> which includes a link on how to install <a href="https://www.python.org/" target="_blank">Python</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Windows users</p>
 <p>If you are using Windows, some of the commands below may not work. Try using <strong>python -m</strong> like this:
@@ -877,6 +948,7 @@ You can also do google searches on MkDocs for lots of other useful content and p
 </code></pre></div>
 For a more permanent solution, you may need to edit your PATH environment variable to include the Scripts directory of your Python installation. Recent versions of Python include a script to do this for you. Navigate to your Python installation directory (for example C:\Python38), open the Tools, then Scripts folder, and run the win_add2path.py file by double clicking on it. Alternatively, you can download the script and run it (python win_add2path.py).
 </div>
+<h2 id="mkdocs">MkDocs</h2>
 <p>Open a Command prompt (Windows) or terminal (MaCOS) to run the following...</p>
 <p>To install, follow these steps:</p>
 <ol>
