@@ -1,11 +1,11 @@
 Three main tasks here: 
-- install Visual Code Studio (VSC)
+- install Visual Studio Code (VSC)
 - install some extensions to VSC
 - configure git and VSC
 
 ## Install VSC
 
-Using the IBM app store for your operating system, install Visual Code Studio (VSC). 
+Using the IBM app store for your operating system, install Visual Studio Code (VSC). 
 
 Mac@IBM application
 
