@@ -4,9 +4,13 @@ As an example, the IBM Cloud Satellite L3 is specified in this <a href="https://
 MkDocs is well documented here: <a href="https://www.mkdocs.org/" target="_blank">https://www.mkdocs.org/</a>.
 You can also do google searches on MkDocs for lots of other useful content and primers. 
 
-The steps that follow assume you have **python** already installed. If you do not, you will need to install them first. More specific instructions can be found in the <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">MkDocs Installation guide</a> which includes a link on how to install <a href="https://www.python.org/" target="_blank">Python</a>.
+## Python
+The steps that follow assume you have **python** already installed. If you do not, you will need to install it first. 
 
---- ARJ For windows users, open a dos prompt, and type in python.... the MS App store should pop up, install the latest version of Python from there. 
+For MS Windows users, open a command prompt and type in **python**. This should open the MS App store and you can install python from there.
+
+For Mac users, python may already be installed on your machine.  Open a terminal and type python. If it is not found, instructions can be found in the <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">MkDocs Installation guide</a> which includes a link on how to install <a href="https://www.python.org/" target="_blank">Python</a>.
+
 
 !!! Note "Windows users"
     
@@ -17,6 +21,7 @@ The steps that follow assume you have **python** already installed. If you do no
     ```
     For a more permanent solution, you may need to edit your PATH environment variable to include the Scripts directory of your Python installation. Recent versions of Python include a script to do this for you. Navigate to your Python installation directory (for example C:\Python38\), open the Tools, then Scripts folder, and run the win_add2path.py file by double clicking on it. Alternatively, you can download the script and run it (python win_add2path.py).
 
+## MkDocs
 
 Open a Command prompt (Windows) or terminal (MaCOS) to run the following...
 

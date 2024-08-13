@@ -15,9 +15,6 @@ Mac@IBM application
 
 More information about VSC can be found <a href="https://code.visualstudio.com/" target="_blank">here</a>.
 
-- install some extensions to VSC
-- configure git and VSC
-
 ## Install VSC extensions
 
 Install the following VSC extensions. This is done using VSC, but you can also explore the <a href="https://marketplace.visualstudio.com/" target="_blank">VSC catalog</a>. To learn more about extensions go <a href="https://code.visualstudio.com/docs/editor/extension-marketplace" target="_blank">here</a>. 
