@@ -42,5 +42,10 @@ Here is a short video (no audio) that shows how to install an extension in VSC:
 
 3. In the **terminal**, run the following commands, replacing ***YOURGITID*** and ***YOUR_EMAIL*** with your appropriate ID and email address.
 
+```
 git config --global user.name YOUR_GITID
+```
+
+```
 git config --global user.email YOUR_EMAIL
+```
