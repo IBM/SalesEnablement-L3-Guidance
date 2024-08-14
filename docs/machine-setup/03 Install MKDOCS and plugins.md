@@ -4,10 +4,11 @@ As an example, the IBM Cloud Satellite L3 is specified in this <a href="https://
 MkDocs is well documented here: <a href="https://www.mkdocs.org/" target="_blank">https://www.mkdocs.org/</a>.
 You can also do google searches on MkDocs for lots of other useful content and primers. 
 
+Before installing MkDocs, we need a few other tools.
+
 ## Python
-The steps that follow assume you have **python** already installed. If you do not, you will need to install it first. 
 
-
+Python is a powerful scripting language. It is used by MkDocs.
 
 ### Mac
 For Mac users, python may already be installed on your machine.  Open a terminal and type python. If it is not found, instructions can be found in the <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">MkDocs Installation guide</a> which includes a link on how to install <a href="https://www.python.org/" target="_blank">Python</a>.
@@ -24,7 +25,9 @@ For MS Windows users, open a command prompt and type in **python**. This should 
     ```
     For a more permanent solution, you may need to edit your PATH environment variable to include the Scripts directory of your Python installation. Recent versions of Python include a script to do this for you. Navigate to your Python installation directory (for example C:\Python38\), open the Tools, then Scripts folder, and run the win_add2path.py file by double clicking on it. Alternatively, you can download the script and run it (python win_add2path.py).
 
-## MkDocs
+## Pip
+
+Pip is a python utility for installing python packages. 
 
 Open a Command prompt (Windows) or terminal (MaCOS) to run the following...
 
@@ -42,33 +45,15 @@ To install, follow these steps:
 
     **If you receive a message about a newer version being available, follow the directions to upgrade pip.**
 
-    !!! Important "Did you get a warning?"
+2. If during the last step you received a PATH warning, you need to update your default PATH environment variable.
 
-        If you get a warning regarding scripts installed in a directory which is not on PATH, copy the PATH name, and save it for later so it can be added to your default PATH.
-
-        ![](_attachments/pipError.png)
-
-2. Install **MKDOCS**
-
-```
-pip install mkdocs
-```
-
-or
-
-```
-pip3 install mkdocs
-```
-
-3. If you received the PATH warning mentioned above, you need to update your default PATH environment variable.
+    ![](_attachments/pipError.png)
 
     **MacOS**
 
     Use a text editor to open the **.zprofile** file in your home directory and add the PATH your copied to the PATH environment variable in the file. The video below shows how this is done. Note, the contents of your **.zprofile** may look a little different. Don't change anything other than the PATH variable and make sure you add a trailing colon (**:**).
 
     ![type:video](_videos/SetPath.mp4)
-
-    Next, close the terminal and open a new terminal to use in the next steps.
 
     **Windows**
 
@@ -83,7 +68,23 @@ pip3 install mkdocs
         g. Click “New”
         h. Enter or paste the path that appeared in the warning message. It should be similar to "/Users/andrewj/Library/Python/3.9/bin".
 
-4. Install MKDOCS **material theme**
+3. If you had to perform the last step, close your terminal or command prompt and open a new one in order for the updated PATH to be used.
+
+4. Install **MKDOCS**
+
+```
+pip install mkdocs
+```
+
+or
+
+```
+pip3 install mkdocs
+```
+
+
+
+5. Install MKDOCS **material theme**
 
 **Material** is the name of the theme we are using in MkDocs.  You can learn more about it <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">here</a>.
 
@@ -97,7 +98,7 @@ or
 pip3 install mkdocs-material
 ```
 
-4. Install MKDOCS macros plugin
+6. Install MKDOCS macros plugin
 
 The **macros plugin** for MkDocs provides lots of useful tools that we use in our builds.  You can learn more about it <a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/" target="_blank">here</a>.
 
@@ -111,7 +112,7 @@ or
 pip3 install mkdocs-macros-plugin
 ```
 
-5. Install MkDocs video plugin
+7. Install MkDocs video plugin
 
 The MkDocs **video plugin** is used to embed videos in our documents.  You can learn more about it <a href="https://pypi.org/project/mkdocs-video/" target="_blank">here</a>.
 
@@ -125,7 +126,7 @@ or
 pip3 install mkdocs-video
 ```
 
-6. Need to see if this works:
+8. Need to see if this works:
 
 ```
 pip install pymdown-extensions
