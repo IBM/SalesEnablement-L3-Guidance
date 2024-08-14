@@ -7,10 +7,13 @@ You can also do google searches on MkDocs for lots of other useful content and p
 ## Python
 The steps that follow assume you have **python** already installed. If you do not, you will need to install it first. 
 
-For MS Windows users, open a command prompt and type in **python**. This should open the MS App store and you can install python from there.
 
+
+### Mac
 For Mac users, python may already be installed on your machine.  Open a terminal and type python. If it is not found, instructions can be found in the <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">MkDocs Installation guide</a> which includes a link on how to install <a href="https://www.python.org/" target="_blank">Python</a>.
 
+### Windows
+For MS Windows users, open a command prompt and type in **python**. This should open the MS App store and you can install python from there.
 
 !!! Note "Windows users"
     
@@ -29,13 +32,21 @@ To install, follow these steps:
 
 1. Install **pip**:
 
-```
-python -m pip install --upgrade pip
-```
-or
-```
-python3 -m pip3 install --upgrade pip3
-```
+    ```
+    python -m pip install --upgrade pip
+    ```
+    or
+    ```
+    python3 -m pip install --upgrade pip
+    ```
+
+    **If you receive a message about a newer version being available, follow the directions to upgrade pip.**
+
+    !!! Important "Did you get a warning?"
+
+        If you get a warning regarding scripts installed in a directory which is not on PATH, copy the PATH name, and save it for later so it can be added to your default PATH.
+
+        ![](_attachments/pipError.png)
 
 2. Install **MKDOCS**
 
@@ -49,7 +60,30 @@ or
 pip3 install mkdocs
 ```
 
-3. Install MKDOCS **material theme**
+3. If you received the PATH warning mentioned above, you need to update your default PATH environment variable.
+
+    **MacOS**
+
+    Use a text editor to open the **.zprofile** file in your home directory and add the PATH your copied to the PATH environment variable in the file. The video below shows how this is done. Note, the contents of your **.zprofile** may look a little different. Don't change anything other than the PATH variable and make sure you add a trailing colon (**:**).
+
+    ![type:video](_videos/SetPath.mp4)
+
+    Next, close the terminal and open a new terminal to use in the next steps.
+
+    **Windows**
+
+    To update the PATH environment variable follow these steps:
+    
+        a. Right-click on the Start Button.
+        b. Select “System” from the context menu.
+        c. Click “Advanced system settings”
+        d. Go to the “Advanced” tab.
+        e. Click “Environment Variables…”
+        f. Click variable called “Path” and click “Edit…”
+        g. Click “New”
+        h. Enter or paste the path that appeared in the warning message. It should be similar to "/Users/andrewj/Library/Python/3.9/bin".
+
+4. Install MKDOCS **material theme**
 
 **Material** is the name of the theme we are using in MkDocs.  You can learn more about it <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">here</a>.
 
