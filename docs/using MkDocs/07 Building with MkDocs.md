@@ -1,6 +1,6 @@
 Once these changes are commited, to do the build with MkDocs, follow these steps.
 
-1. If not already open, open a **terminal** in Visual Code Studio.
+1. If not already open, open a **terminal** in Visual Studio Code.
 
     ![](_attachments/VSC-newTerminal.png)
 

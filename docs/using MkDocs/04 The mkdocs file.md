@@ -12,7 +12,7 @@ You should spend some time studying the file and its structure. The sections use
 
 1. In VSC, click the **mkdocs.yml** file in the **EXPLORER* view.
 
-As you modify your **mkdocs.yml** file and add content in your **docs** directory, you will notice on the left hand side of **Visual Code Studio** that a count of the **Unstaged Changes** appear on the **Source Control** icon.  
+As you modify your **mkdocs.yml** file and add content in your **docs** directory, you will notice on the left hand side of **Visual Studio Code** that a count of the **Unstaged Changes** appear on the **Source Control** icon.  
 
 While listed as steps below, you don't have to do anything here, but you should go through each step and learn about the different sections used by other IBM Cloud L3s. There are many other configurations that could be specified, but using these will keep things consistent with other IBM Cloud L3s.
 

@@ -1,4 +1,4 @@
-We will be using Visual Code Studio (VSC) to do most your work, however, there will be times when you will need to use a web browser to access the github repository (especially if creating a new course). I'll note when something doesn't have to be done if your just updating a course.
+We will be using Visual Studio Code (VSC) to do most your work, however, there will be times when you will need to use a web browser to access the github repository (especially if creating a new course). I'll note when something doesn't have to be done if your just updating a course.
 
 ## Clone the repository to your local machine
 
@@ -14,8 +14,8 @@ You can use the new repository you created earlier if you are creating a new cou
     <a href="https://github.com/IBM/SalesEnablement-L3-test-repo2" target="_blank">https://github.com/IBM/SalesEnablement-L3-test-repo2</a>
 
 2. Click the green **Code** drop down.
-3. Click the **HTTP** tab under **Clone**. 
-4. Copy the HTTP clone link.
+3. Click the **HTTPS** tab under **Clone**. 
+4. Copy the HTTPS clone link.
 
    !!! Note "image below uses SSH being selected."
 
