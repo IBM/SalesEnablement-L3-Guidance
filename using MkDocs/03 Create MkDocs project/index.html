@@ -925,24 +925,26 @@
 <p>Now that you have a clone of the repository, next you need to initialize MkDocs for the repository. </p>
 <h2 id="initializing-a-new-repository-for-mkdocs">Initializing a new repository for MkDocs</h2>
 <ol>
-<li>Open a <strong>terminal</strong> in VSC.</li>
-</ol>
+<li>
+<p>Open a <strong>terminal</strong> in VSC.</p>
 <p><img alt="" src="../_attachments/VSC-newTerminal.png"></p>
 <p>You can resize the terminal window by grabbing the frame bar between the welcome screen and the terminal. Notice the terminal opens with the path set to the directory that was created for your clone repository.</p>
-<ol start="2">
-<li>Run the <strong>mkdocs new</strong> command specifying the current directory (.) for the name.</li>
-</ol>
+</li>
+<li>
+<p>Run the <strong>mkdocs new</strong> command specifying the current directory (.) for the name.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdocs new .
 </code></pre></div>
 <p><img alt="" src="../_attachments/VSC-mkdocsNew.png"></p>
 <p>Notice 2 new files and the <strong>docs</strong> directory are created.</p>
-<ol start="3">
-<li>In the VCS terminal, create a <strong>.gitignore</strong> file to ignore file. </li>
-</ol>
+</li>
+<li>
+<p>In the VCS terminal, create a <strong>.gitignore</strong> file to ignore file. </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>echo "site/" &gt;&gt; .gitignore
 </code></pre></div>
 <p>The .gitignore is used to exclude certain files or directories from being pushed up to the GitHub repository. The above command created the file and populated with the <strong>site</strong> directory. The <strong>site</strong> directory will contain build files that MkDocs generates. These files do not need to be pushed up to GitHub.</p>
-<p><img alt="" src="../_attachments/VCS-gitignore.png"></p></div>
+<p><img alt="" src="../_attachments/VCS-gitignore.png"></p>
+</li>
+</ol></div>
 
 
 

@@ -927,13 +927,13 @@
 <p>For this example we will keep it real simple. The <strong>mkdocs.yml</strong> file that is created with the <strong>mkdocs new</strong> command in the previous chapter is very basic. If you are creating a new L3, I suggest copying the <strong>mkdocs.yml</strong> from an existing IBM Cloud level 3 course and modifying it. This is what was done for the SalesEnablement-L3-test-repo2 repository.</p>
 <p>You should spend some time studying the file and its structure. The sections used in the IBM Cloud L3s are described at a high level below. The samples given are based on the SalesEnablement-L3-test-repo2 repository when I initially created it. Others may have modified since, so what you see now in the repository may differ.</p>
 <ol>
-<li>In VSC, click the <strong>mkdocs.yml</strong> file in the *<em>EXPLORER</em> view.</li>
-</ol>
+<li>
+<p>In VSC, click the <strong>mkdocs.yml</strong> file in the *<em>EXPLORER</em> view.</p>
 <p>As you modify your <strong>mkdocs.yml</strong> file and add content in your <strong>docs</strong> directory, you will notice on the left hand side of <strong>Visual Studio Code</strong> that a count of the <strong>Unstaged Changes</strong> appear on the <strong>Source Control</strong> icon.  </p>
 <p>While listed as steps below, you don't have to do anything here, but you should go through each step and learn about the different sections used by other IBM Cloud L3s. There are many other configurations that could be specified, but using these will keep things consistent with other IBM Cloud L3s.</p>
-<ol start="2">
-<li><strong>Project info</strong></li>
-</ol>
+</li>
+<li>
+<p><strong>Project info</strong></p>
 <p>This section has general information about the project and who created it, etc. </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># Project info
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>site_name: IBM Cloud Sample Level 3 
@@ -947,9 +947,9 @@
 <li><strong>site_author</strong>: not sure if this is used anywhere</li>
 <li><strong>copyright</strong>: shown at the bottom of the published pages</li>
 </ul>
-<ol start="3">
-<li><strong>Repository</strong></li>
-</ol>
+</li>
+<li>
+<p><strong>Repository</strong></p>
 <p>This section specifies what GitHub repository is used for the content.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># Repository
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>repo_name: IBM/SalesEnablement-test-repo2
@@ -965,9 +965,9 @@
 </ul>
 <p>I typically comment out (#) the <strong>repo_url</strong> and <strong>edit_uri</strong>. If you don't, then links to the GitHub repository will appear on the published pages. We may do this in the future to allow users to directly open issues in GitHub.</p>
 <p><img alt="" src="../_attachments/VSI-repoURLs.png"></p>
-<ol start="4">
-<li><strong>theme</strong></li>
-</ol>
+</li>
+<li>
+<p><strong>theme</strong></p>
 <p>The <strong>theme</strong> sections specifies what MkDocs theme to use and attributes for the theme. Recall we installed the <strong>material</strong> theme. There are others, but thus far we have standardized IBM Cloud L3s with the <strong>material</strong> theme. There are also many other attributes that could be specified, but these will suffice for now. You can try changing these and viewing the results, but again, would suggesting keeping these values for consistency with the other L3s.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>theme:
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  name: material
@@ -988,9 +988,9 @@
 <a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        icon: material/toggle-switch
 <a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        name: Switch to light mode
 </code></pre></div>
-<ol start="5">
-<li><strong>plugins</strong></li>
-</ol>
+</li>
+<li>
+<p><strong>plugins</strong></p>
 <p>The <strong>plugins</strong> sections tells the build process what plugins are used by the content. We installed these plugins already. </p>
 <p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>plugins:
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    - mkdocs-video
@@ -1012,9 +1012,9 @@
 <a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>  - attr_list
 <a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  - md_in_html
 </code></pre></div>
-<ol start="7">
-<li><strong>nav</strong></li>
-</ol>
+</li>
+<li>
+<p><strong>nav</strong></p>
 <p>The <strong>nav</strong> (short for navigation) section defines the table of content for the published pages and specifies where the content comes from (file names).</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nav:
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  - Introduction: 'index.md'
@@ -1023,16 +1023,18 @@
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    - 'Reserve the environment': 'Part 1/02 Reserve.md'
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>  - Part 2 - Provisioning a PowerVS workspace:
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    - 'Introduction': 'Part 2/01 Introduction.md'
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    - 'Click through demonstration of a workspace being provisioned': 'Part 2/03 Clickthru-service.md'
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>   - 'Click through demonstration of a workspace being provisioned': 'Part 2/03 Clickthru-service.md'
 <a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>  - Part 3 - Next steps:
 <a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    - 'Next steps': 'Part 3/01 Next steps.md'
 </code></pre></div>
 <p>The above structure is what I've used in the other IBM Cloud L3s. Using the directory structure and file naming convention keeps the VSC EXPLORER view consistent with the table of contents.</p>
-<ol start="7">
-<li><strong>extra</strong></li>
-</ol>
+</li>
+<li>
+<p><strong>extra</strong></p>
 <p>Think of the <strong>extra</strong> section as where you can define global variables to be used in your content. Instead of typing the same name in 10 different markdown files, just specify it once here and then reference it in the 10 files using the {{variable}} notation. You will see this in action when we start editing markdown.</p>
 <p>I don't recall what the <strong>generator: false</strong> extra does.</p>
+</li>
+</ol>
 <p>Again, lots of other things could go in the mkdocs.yml file, but this is what you need to know to work with the existing IBM Cloud L3s.</p></div>
 
 
