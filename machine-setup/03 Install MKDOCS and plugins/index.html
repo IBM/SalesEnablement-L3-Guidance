@@ -420,8 +420,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mkdocs" class="md-nav__link">
-    MkDocs
+  <a href="#pip" class="md-nav__link">
+    Pip
   </a>
   
 </li>
@@ -946,8 +946,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mkdocs" class="md-nav__link">
-    MkDocs
+  <a href="#pip" class="md-nav__link">
+    Pip
   </a>
   
 </li>
@@ -976,8 +976,9 @@
 As an example, the IBM Cloud Satellite L3 is specified in this <a href="https://github.com/IBM/SalesEnablement-Satellite-L3" target="_blank">GitHub repository</a> and the MKDOCS build output can be found <a href="https://ibm.github.io/SalesEnablement-Satellite-L3/" target="_blank">here</a>.</p>
 <p>MkDocs is well documented here: <a href="https://www.mkdocs.org/" target="_blank">https://www.mkdocs.org/</a>.
 You can also do google searches on MkDocs for lots of other useful content and primers. </p>
+<p>Before installing MkDocs, we need a few other tools.</p>
 <h2 id="python">Python</h2>
-<p>The steps that follow assume you have <strong>python</strong> already installed. If you do not, you will need to install it first. </p>
+<p>Python is a powerful scripting language. It is used by MkDocs.</p>
 <h3 id="mac">Mac</h3>
 <p>For Mac users, python may already be installed on your machine.  Open a terminal and type python. If it is not found, instructions can be found in the <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">MkDocs Installation guide</a> which includes a link on how to install <a href="https://www.python.org/" target="_blank">Python</a>.</p>
 <h3 id="windows">Windows</h3>
@@ -990,7 +991,8 @@ You can also do google searches on MkDocs for lots of other useful content and p
 </code></pre></div>
 For a more permanent solution, you may need to edit your PATH environment variable to include the Scripts directory of your Python installation. Recent versions of Python include a script to do this for you. Navigate to your Python installation directory (for example C:\Python38), open the Tools, then Scripts folder, and run the win_add2path.py file by double clicking on it. Alternatively, you can download the script and run it (python win_add2path.py).
 </div>
-<h2 id="mkdocs">MkDocs</h2>
+<h2 id="pip">Pip</h2>
+<p>Pip is a python utility for installing python packages. </p>
 <p>Open a Command prompt (Windows) or terminal (MaCOS) to run the following...</p>
 <p>To install, follow these steps:</p>
 <ol>
@@ -1002,28 +1004,13 @@ or
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3 -m pip install --upgrade pip
 </code></pre></div>
 <p><strong>If you receive a message about a newer version being available, follow the directions to upgrade pip.</strong></p>
-<div class="admonition important">
-<p class="admonition-title">Did you get a warning?</p>
-<p>If you get a warning regarding scripts installed in a directory which is not on PATH, copy the PATH name, and save it for later so it can be added to your default PATH.</p>
+</li>
+<li>
+<p>If during the last step you received a PATH warning, you need to update your default PATH environment variable.</p>
 <p><img alt="" src="../_attachments/pipError.png"></p>
-</div>
-</li>
-<li>
-<p>Install <strong>MKDOCS</strong></p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip install mkdocs
-</code></pre></div>
-<p>or</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip3 install mkdocs
-</code></pre></div>
-<ol start="3">
-<li>
-<p>If you received the PATH warning mentioned above, you need to update your default PATH environment variable.</p>
 <p><strong>MacOS</strong></p>
 <p>Use a text editor to open the <strong>.zprofile</strong> file in your home directory and add the PATH your copied to the PATH environment variable in the file. The video below shows how this is done. Note, the contents of your <strong>.zprofile</strong> may look a little different. Don't change anything other than the PATH variable and make sure you add a trailing colon (<strong>:</strong>).</p>
 <p><div class="video-container"><iframe src="../_videos/SetPath.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
-<p>Next, close the terminal and open a new terminal to use in the next steps.</p>
 <p><strong>Windows</strong></p>
 <p>To update the PATH environment variable follow these steps:</p>
 <div class="highlight"><pre><span></span><code>a. Right-click on the Start Button.
@@ -1037,8 +1024,19 @@ h. Enter or paste the path that appeared in the warning message. It should be si
 </code></pre></div>
 </li>
 <li>
-<p>Install MKDOCS <strong>material theme</strong></p>
+<p>If you had to perform the last step, close your terminal or command prompt and open a new one in order for the updated PATH to be used.</p>
 </li>
+<li>
+<p>Install <strong>MKDOCS</strong></p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip install mkdocs
+</code></pre></div>
+<p>or</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip3 install mkdocs
+</code></pre></div>
+<ol start="5">
+<li>Install MKDOCS <strong>material theme</strong></li>
 </ol>
 <p><strong>Material</strong> is the name of the theme we are using in MkDocs.  You can learn more about it <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">here</a>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip install mkdocs-material
@@ -1046,7 +1044,7 @@ h. Enter or paste the path that appeared in the warning message. It should be si
 <p>or </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip3 install mkdocs-material
 </code></pre></div>
-<ol start="4">
+<ol start="6">
 <li>Install MKDOCS macros plugin</li>
 </ol>
 <p>The <strong>macros plugin</strong> for MkDocs provides lots of useful tools that we use in our builds.  You can learn more about it <a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/" target="_blank">here</a>.</p>
@@ -1055,7 +1053,7 @@ h. Enter or paste the path that appeared in the warning message. It should be si
 <p>or </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip3 install mkdocs-macros-plugin
 </code></pre></div>
-<ol start="5">
+<ol start="7">
 <li>Install MkDocs video plugin</li>
 </ol>
 <p>The MkDocs <strong>video plugin</strong> is used to embed videos in our documents.  You can learn more about it <a href="https://pypi.org/project/mkdocs-video/" target="_blank">here</a>.</p>
@@ -1064,7 +1062,7 @@ h. Enter or paste the path that appeared in the warning message. It should be si
 <p>or</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pip3 install mkdocs-video
 </code></pre></div>
-<ol start="6">
+<ol start="8">
 <li>Need to see if this works:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pip install pymdown-extensions
@@ -1100,7 +1098,7 @@ h. Enter or paste the path that appeared in the warning message. It should be si
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022 IBM
+      Copyright &copy; 2022,2024 IBM
     </div>
   
   
