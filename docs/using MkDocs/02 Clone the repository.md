@@ -19,26 +19,26 @@ You can use the new repository you created earlier if you are creating a new cou
 
    !!! Note "image below uses SSH being selected."
 
-![](_attachments/GetCloneLink.png)
+        ![](_attachments/GetCloneLink.png)
 
 1. Open VSC.
 2. At the VSC welcome screen, click **Clone Git Repository**.
 
-![](_attachments/VSC-Welcome.png)
+    ![](_attachments/VSC-Welcome.png)
 
-7. Paste the SSH clone link for the repository in to the entry field and **Enter**.
+3. Paste the SSH clone link for the repository into the entry field and **Enter**.
 
-![](_attachments/VSC-Clone.png)
+    ![](_attachments/VSC-Clone.png)
 
-8. Specify where you want to save your clone on your local machine and then click **Select as Repository Destination**.
+4. Specify where you want to save your clone on your local machine and then click **Select as Repository Destination**.
 
-![](_attachments/VSC-cloneRepoSave.png)
+    ![](_attachments/VSC-cloneRepoSave.png)
 
-!!! Note "Where should I save this?"
+    !!! Note "Where should I save this?"
 
-    It really doesn't matter, but I would suggest creating a directory where you will keep all your Sales Enablement L3s. Perhaps something like **~/Documents/SalesEnablementL3s/**. When you specify the directory, it will create a subdirectory with the name of the repository.
+        It really doesn't matter, but I would suggest creating a directory where you will keep all your Sales Enablement L3s. Perhaps something like **~/Documents/SalesEnablementL3s/**. When you specify the directory, it will create a subdirectory with the name of the repository.
 
-9. Click either **Open** or **Open in New Window** on the pop-up dialog.
+5. Click either **Open** or **Open in New Window** on the pop-up dialog.
 
 You now have successfully clone the repository form GitHub to your local machine.
 

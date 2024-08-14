@@ -72,70 +72,70 @@ To install, follow these steps:
 
 4. Install **MKDOCS**
 
-```
-pip install mkdocs
-```
+    ```
+    pip install mkdocs
+    ```
 
-or
+    or
 
-```
-pip3 install mkdocs
-```
+    ```
+    pip3 install mkdocs
+    ```
 
 
 
 5. Install MKDOCS **material theme**
 
-**Material** is the name of the theme we are using in MkDocs.  You can learn more about it <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">here</a>.
+    **Material** is the name of the theme we are using in MkDocs.  You can learn more about it <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">here</a>.
 
-```
-pip install mkdocs-material
-```
+    ```
+    pip install mkdocs-material
+    ```
 
-or 
+    or 
 
-```
-pip3 install mkdocs-material
-```
+    ```
+    pip3 install mkdocs-material
+    ```
 
 6. Install MKDOCS macros plugin
 
-The **macros plugin** for MkDocs provides lots of useful tools that we use in our builds.  You can learn more about it <a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/" target="_blank">here</a>.
+    The **macros plugin** for MkDocs provides lots of useful tools that we use in our builds.  You can learn more about it <a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/" target="_blank">here</a>.
 
-```
-pip install mkdocs-macros-plugin
-```
+    ```
+    pip install mkdocs-macros-plugin
+    ```
 
-or 
+    or 
 
-```
-pip3 install mkdocs-macros-plugin
-```
+    ```
+    pip3 install mkdocs-macros-plugin
+    ```
 
 7. Install MkDocs video plugin
 
-The MkDocs **video plugin** is used to embed videos in our documents.  You can learn more about it <a href="https://pypi.org/project/mkdocs-video/" target="_blank">here</a>.
+    The MkDocs **video plugin** is used to embed videos in our documents.  You can learn more about it <a href="https://pypi.org/project/mkdocs-video/" target="_blank">here</a>.
 
-```
-pip install mkdocs-video
-```
+    ```
+    pip install mkdocs-video
+    ```
 
-or
+    or
 
-```
-pip3 install mkdocs-video
-```
+    ```
+    pip3 install mkdocs-video
+    ```
 
 8. Need to see if this works:
 
-```
-pip install pymdown-extensions
-```
+    ```
+    pip install pymdown-extensions
+    ```
 
-or 
+    or 
 
-```
-pip3 install pymdown-extensions
-```
+    ```
+    pip3 install pymdown-extensions
+    ```
 
 Note, there are many more MkDocs <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes" target="_blank">themes</a> and <a href="https://github.com/mkdocs/catalog" target="_blank">plugins</a> that you may find useful in your content development.  However, to be consistent with other IBM Cloud L3s, I suggest sticking with the Material plugin that you just installed.

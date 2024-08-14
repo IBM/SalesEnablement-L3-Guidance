@@ -14,17 +14,17 @@ The creation of new repositories is automated, simple, and fast. If you are crea
 
 5. Complete the form. Just update the first 7 values in the form (remove teams, remove template).
 
-Below are the values I used in creating this repository. Be sure and change the "users" field to your name. The **IBMSalesEnablement-TeamHybridCloud** is a GitHub team that I created for the IBM Cloud team.
+    Below are the values I used in creating this repository. Be sure and change the "users" field to your name. The **IBMSalesEnablement-TeamHybridCloud** is a GitHub team that I created for the IBM Cloud team.
 
-```
-* name: SalesEnablement-L3-Guidance
-* users: andrewj2000
-* teams: IBMSalesEnablement-TeamHybridCloud
-* description: Sales Enablement guidance for creating L3 Learning PLans and content
-* template: template_1 (*Optional*) **REMOVE THIS LINE IF NOT NEEDED**
-* license: apache-2.0
-* approval: yes
-```
+    ```
+    * name: SalesEnablement-L3-Guidance
+    * users: andrewj2000
+    * teams: IBMSalesEnablement-TeamHybridCloud
+    * description: Sales Enablement guidance for creating L3 Learning PLans and content
+    * template: template_1 (*Optional*) **REMOVE THIS LINE IF NOT NEEDED**
+    * license: apache-2.0
+    * approval: yes
+    ```
 
 6. Click **Submit new issue**
 7. Watch your email and follow the directions there.

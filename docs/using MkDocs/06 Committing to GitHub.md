@@ -8,25 +8,25 @@ Feel free to contact me individually and we can discuss above in detail when the
 
 1. Click the **Source Control** icon in VSC.
 
-![](_attachments/VCS-sourceControl.png)
+    ![](_attachments/VCS-sourceControl.png)
 
 2. Enter a **message** about what you are committing.
 
-You should try to make this a meaningful message as it will appear as part of the history of the updates in GitHub.
+    You should try to make this a meaningful message as it will appear as part of the history of the updates in GitHub.
 
-Notice below the **Commit** button are all the files that have been modified, added, or removed.
+    Notice below the **Commit** button are all the files that have been modified, added, or removed.
 
-![](_attachments/VCS-commitMessage.png)
+    ![](_attachments/VCS-commitMessage.png)
 
 3. Click **Commit**.
 
-![](_attachments/VCS--commit.png)
+    ![](_attachments/VCS--commit.png)
 
-Note, you can perform many commits (thus adding more messages and info in GitHub). This doesn't actually push the files up to GitHub, that comes next.
+    Note, you can perform many commits (thus adding more messages and info in GitHub). This doesn't actually push the files up to GitHub, that comes next.
 
-!!! Note "VSC pop-up dialog"
+    !!! Note "VSC pop-up dialog"
 
-    If you get a dialog stating something like ***There are no staged changes to commit***, click on **Always**  to always sage your changes and commit them directly.
+        If you get a dialog stating something like ***There are no staged changes to commit***, click on **Always**  to always sage your changes and commit them directly.
 
 4. Click **Sync Changes**.
 

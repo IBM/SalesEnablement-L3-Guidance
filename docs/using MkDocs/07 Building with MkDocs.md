@@ -48,8 +48,8 @@ Unfortunately, just because the build doesn't show any errors doesn't mean your 
 
     ![](_attachments/GH-actions.png)
 
-The deployment shows all the steps of the build process. Feel free to explore the information provided. The link the the deployed content is also available.
+    The deployment shows all the steps of the build process. Feel free to explore the information provided. The link the the deployed content is also available.
 
-![](_attachments/GH-actionComplete.png)
+    ![](_attachments/GH-actionComplete.png)
 
 Information provided on the above pages may be helpful in debugging issues.

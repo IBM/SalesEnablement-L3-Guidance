@@ -28,8 +28,8 @@ For Windows:
 
 1. Using the the appropriate app store for your operating system, install GitHub Desktop. Search for **GitHub Desktop** in the appropriate app store and follow installation directions.
 
-Mac@IBM application
+    Mac@IBM application
 
-<a href="https://w3.ibm.com/download/standardsoftware/PC/lang_en/issiCatalogPC.html" target="_blank">IBM Windows App Store</a>
+    <a href="https://w3.ibm.com/download/standardsoftware/PC/lang_en/issiCatalogPC.html" target="_blank">IBM Windows App Store</a>
 
-![](_attachments/GHDesktop.png)
+    ![](_attachments/GHDesktop.png)
