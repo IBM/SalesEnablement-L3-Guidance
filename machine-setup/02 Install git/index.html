@@ -377,6 +377,26 @@
     git
   </a>
   
+    <nav class="md-nav" aria-label="git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    MacOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -903,6 +923,26 @@
     git
   </a>
   
+    <nav class="md-nav" aria-label="git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    MacOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -934,7 +974,7 @@
 
 <div><p>We need to install both <strong>git</strong> and <strong>GitHub Desktop</strong>. </p>
 <h2 id="git">git</h2>
-<p>For MacOS:</p>
+<h4 id="macos"><strong>MacOS</strong></h4>
 <ol>
 <li>Open a <strong>terminal</strong> window.</li>
 <li>
@@ -947,14 +987,34 @@
 <p><img alt="" src="../_attachments/gitMac.png"></p>
 </li>
 </ol>
-<p>For Windows:</p>
+<h4 id="windows"><strong>Windows</strong></h4>
 <ol>
+<li>Open a <strong>command prompt</strong> window.</li>
+<li>
+<p>Try running the <strong>git</strong> command:</p>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git
+</code></pre></div>
+3. If it returns an error like "git not found", follow the next steps. If it returns information on using the git command line, then skip to the GitHub Desktop section.
+</li>
 <li>
 <p>Open a browser to the following page:</p>
 <p><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
 </li>
 <li>
 <p>Scroll down and find the instructions for your platform (Windows or MacOS) and <strong>follow the directions there</strong>.</p>
+</li>
+<li>
+<p>Once git is installed, set the PATH environment variable to include the git binary directory. By default, this should be "C:/Program Files/git/bin". Double check the path using file explorer.</p>
+<p>To update the PATH environment variable follow these steps:</p>
+<div class="highlight"><pre><span></span><code>a. Right-click on the Start Button.
+b. Select “System” from the context menu.
+c. Click “Advanced system settings”
+d. Go to the “Advanced” tab.
+e. Click “Environment Variables…”
+f. Click variable called “Path” and click “Edit…”
+g. Click “New”
+h. Enter or paste the path that appeared in the warning message. It should be similar to "C:/Program Files/git/bin".
+</code></pre></div>
 </li>
 </ol>
 <h2 id="github-desktop">GitHub Desktop</h2>
