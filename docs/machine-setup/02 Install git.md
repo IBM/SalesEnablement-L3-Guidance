@@ -2,8 +2,7 @@ We need to install both **git** and **GitHub Desktop**.
 
 ## git
 
-
-For MacOS:
+#### **MacOS**
 
 1. Open a **terminal** window.
 2. Try running the **git** command:
@@ -16,13 +15,34 @@ For MacOS:
     
     ![](_attachments/gitMac.png)
 
-For Windows:
+#### **Windows**
 
-1. Open a browser to the following page:
+1. Open a **command prompt** window.
+2. Try running the **git** command:
+
+    ```
+    git
+    ```
+3. If it returns an error like "git not found", follow the next steps. If it returns information on using the git command line, then skip to the GitHub Desktop section.
+   
+4. Open a browser to the following page:
 
     <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a>
 
-2. Scroll down and find the instructions for your platform (Windows or MacOS) and **follow the directions there**.
+5. Scroll down and find the instructions for your platform (Windows or MacOS) and **follow the directions there**.
+
+6. Once git is installed, set the PATH environment variable to include the git binary directory. By default, this should be "C:/Program Files/git/bin". Double check the path using file explorer.
+
+    To update the PATH environment variable follow these steps:
+    
+        a. Right-click on the Start Button.
+        b. Select “System” from the context menu.
+        c. Click “Advanced system settings”
+        d. Go to the “Advanced” tab.
+        e. Click “Environment Variables…”
+        f. Click variable called “Path” and click “Edit…”
+        g. Click “New”
+        h. Enter or paste the path that appeared in the warning message. It should be similar to "C:/Program Files/git/bin".
 
 ## GitHub Desktop
 
