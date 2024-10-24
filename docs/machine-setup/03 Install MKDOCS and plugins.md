@@ -164,5 +164,15 @@ To install, follow these steps:
 
 11. For creating PDF files, install the mkdocs-print-site-plugin. Follow the directions here: <a href="https://timvink.github.io/mkdocs-print-site-plugin/how-to/export-PDF.html" target="_blank">https://timvink.github.io/mkdocs-print-site-plugin/how-to/export-PDF.html</a>.
 
+    ```
+    pip install print-site
+    ```
+
+    or
+
+    ```
+    pip3 inst
+
+
 
 Note, there are many more MkDocs <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes" target="_blank">themes</a> and <a href="https://github.com/mkdocs/catalog" target="_blank">plugins</a> that you may find useful in your content development.  However, to be consistent with other IBM Cloud L3s, I suggest sticking with the Material plugin that you just installed.
