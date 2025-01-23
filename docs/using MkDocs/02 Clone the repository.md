@@ -17,8 +17,7 @@ You can use the new repository you created earlier if you are creating a new cou
 3. Click the **HTTPS** tab under **Clone**. 
 4. Copy the HTTPS clone link.
 
-   !!! Note "image below uses SSH being selected."
-
+    !!! Note "Image below uses SSH"
         ![](_attachments/GetCloneLink.png)
 
 1. Open VSC.

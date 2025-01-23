@@ -22,7 +22,7 @@ A few suggestions:
 
   - Make things line up
   
-    Things should line up in your content as described in the COE. MKDOCS can be a little strange to figure out. For instance, to ge an image to line up under a numbered item, you must have the image definition preceded by 4 spaces, like:
+    Things should line up in your content as described in the COE. MKDOCS can be a little strange to figure out. For instance, to get an image to line up under a numbered item, you must have the image definition preceded by 4 spaces, like:
 
     ```
     1. Click the IBM Cloud portal menu ![](_attachments/hamburgerIcon.png), expand the **Observability** menu and click **Monitoring**.
