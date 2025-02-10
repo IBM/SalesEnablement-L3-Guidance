@@ -171,8 +171,18 @@ To install, follow these steps:
     or
 
     ```
-    pip3 inst
+    pip3 install print-site
+    ```
 
+12. Install navigate plugin to allow use of nav file for Table of contents.
 
+    ```
+    pip install mkdocs-literate-nav
+    ```
 
+    or 
+
+    ```
+    pip2 install mkdocs-literate-nav
+    ```
 Note, there are many more MkDocs <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes" target="_blank">themes</a> and <a href="https://github.com/mkdocs/catalog" target="_blank">plugins</a> that you may find useful in your content development.  However, to be consistent with other IBM Cloud L3s, I suggest sticking with the Material plugin that you just installed.
